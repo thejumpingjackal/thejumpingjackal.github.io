@@ -1,1 +1,215 @@
-Hello World
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="Edward Wang Logo.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Edward Wang</title>
+		<style>
+			* {
+  			box-sizing: border-box;
+			}
+			body {
+				color: white;
+				background-color: black;
+				font-family: "Raleway", sans-serif;
+			}
+			ul {
+  			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+  			overflow: hidden;
+  			background-color: rgb(30, 30, 30);
+			}
+			li {
+  			float: left;
+			}
+			li a {
+		  	display: block;
+  			color: white;
+  			text-align: center;
+  			padding: 14px 16px;
+  			text-decoration: none;
+			}
+			li a:hover {
+  			background-color: black;
+			}
+			.rightli {
+				background-color: green;
+				float: right;
+			}
+			.rightli a:hover {
+				background-color: rgb(0, 100, 0);
+			}
+			.welcome {
+				text-align: center;
+				font-size: 100px;
+			}
+			.dvdr {
+				text-align: center;
+				font-size: 50px;
+			}
+			.autobio {
+				width: 80%;
+			}
+			footer {
+				background-color: rgb(30, 30, 30);
+			}
+			h6 {
+				font-size: 20px;
+				margin: 0;
+			}
+			.column {
+				float: left;
+				width: 33%;
+				padding: 10px;
+			}
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			button {
+				color: white;
+				font-family: "Raleway", sans-serif;
+				background-color: green;
+				width: 100%;
+				border: 0;
+				padding: 6px 15px;
+			}
+			button:hover {
+				background-color: rgb(0, 100, 0);
+			}
+			.fa {
+  			padding: 20px;
+  			font-size: 30px;
+  			width: 90px;
+				height: 70px;
+  			text-align: center;
+  			text-decoration: none;
+  			margin: 5px 2px;
+			}
+			.fa:hover {
+    		opacity: 0.7;
+			}
+			.fa-twitter {
+  			background: black;
+  			color: white;
+			}
+			.fa-youtube {
+  			background: black;
+  			color: white;
+			}
+			.fa-pinterest {
+  			background: black;
+  			color: white;
+			}
+			.fa-reddit {
+  			background: black;
+  			color: white;
+			}
+			#back2Top {
+				width: 40px;
+				line-height: 40px;
+				overflow: hidden;
+				z-index: 800;
+				display: none;
+				cursor: pointer;
+				-moz-transform: rotate(270deg);
+				-webkit-transform: rotate(270deg);
+				-o-transform: rotate(270deg);
+				-ms-transform: rotate(270deg);
+				transform: rotate(270deg);
+				position: fixed;
+				bottom: 50px;
+				right: 0;
+				background-color: rgb(221, 221, 221);
+				color: rgb(85, 85, 85);
+				text-align: center;
+				font-size: 30px;
+				text-decoration: none;
+			}
+			#back2top:hover {
+				background color: rgb(221, 221, 225);
+				color: rgb(0, 0, 0);
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			$(window).scroll(function() {
+    		var height = $(window).scrollTop();
+    		if (height > 100) {
+        	$('#back2Top').fadeIn();
+    		} else {
+        $('#back2Top').fadeOut();
+    		}
+			});
+			$(document).ready(function() {
+    		$("#back2Top").click(function(event) {
+        	event.preventDefault();
+        	$("html, body").animate({ scrollTop: 0 }, "slow");
+        	return false;
+    		});
+			});
+		</script>
+	</head>
+	<body>
+		<!--Navigation Bar-->
+		<div class="nav-bar">
+			<ul>
+				<li title="The Home Page"><a href="file:///C:/Users/Kun/Downloads/Blog/Website/Blog_Home.html">Home</a></li>
+				<li title="See what's happening in my life"><a href="file:///C:/Users/Kun/Downloads/Blog/Website/Blog_Feed.html">Feed</a></li>
+				<li title="Contact me"><a>Contact</a></li>
+				<li title="This is a small autobiography :)" class="rightli"><a>About</a></li>
+			</ul>
+		</div>
+
+		<!--The body of the website-->
+		<div class="body">
+			<h1 class="welcome">Edward Wang</h1>
+			<h3 class="dvdr">&#11835;</h3>
+			<h2 class="me">Me</h2>
+			<img id="logo" src="Edward Wang Logo.png" height="50px">
+			<p class="autobio">My name is Edward Wang and I am currently an eighth grader at Basis Flagstaff. I have two sisters and I live in a suburban area in Flagstaff. I won 2<sup>nd</sup> place in the 2015 Coconino County Spelling Bee. I also won 3<sup>rd</sup> place in the 2018 <abbr title="Northern Arizona University">NAU</abbr> Piano Individual Contest and 1<sup>st</sup> place in the 2019 <abbr title="Northern Arizona University">NAU</abbr> Individual Contest and 1<sup>st</sup> in the 2019 <abbr title="Northern Arizona University">NAU</abbr> Concerto Contest. I am also able to speak Chinese (&#27721;&#35821;) , Japanese (&#26085;&#26412;&#35486;), Korean (&#54620;&#44397;), German (Deutsche), and Navajo (Diné Bizaad) to varying degrees.</p>
+		</div>
+
+		<!--footer-->
+		<footer class="row">
+			<div class="column">
+				<h6>About</h6>
+				<h6><b>&#8212;</b></h6>
+				<p>This website couldn't have been made without the following people:
+				<br>Savannah "Meap" Valez
+				<br>Neill Wiederzheng
+				<br>"Snowflake" Tchukuvista
+				<br>Chico Koruvista
+				<br>Ciuniu Gatoreinn
+				<br>Connor Undor</p>
+				<button>Learn More About These People!</button>
+			</div>
+			<div class="column">
+				<h6>Contact</h6>
+				<h6><b>&#8212;</b></h6>
+				<p>So...
+				<br>Do you have any questions?
+				<br>Queries?
+				<br>Comments?
+				<br>Questiaplescants?
+				<br>Anything you'd like to say?
+				<br>If so, click the button below.</p>
+				<button>Contact Me!</button>
+			</div>
+			<div class="column">
+				<h6>Copyright</h6>
+				<h6><b>&#8212;</b></h6>
+				<p>All rights reserved. Edward Wang &#169; 2019.</p>
+				<h6>Find me:</h6>
+				<a href="https://twitter.com/realitatis0" class="fa fa-twitter"></a>
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-youtube"></a>
+				<a href="https://www.pinterest.com/livingunderthesofa" class="fa fa-pinterest"></a>
+				<a href="https://www.reddit.com/user/thejumpingjackal" class="fa fa-reddit"></a>
+			</div>
+			<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+		</footer>
+	</body>
+</html>
