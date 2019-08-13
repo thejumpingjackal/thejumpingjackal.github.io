@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link href="Edward Wang Logo.png">
+		<link rel="icon" href="Edward Wang Logo.ico" type="image/x-icon"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Edward Wang</title>
 		<style>
@@ -49,8 +49,30 @@
 				text-align: center;
 				font-size: 50px;
 			}
+			#logo {
+				float: left;
+				width: 10%;
+				background: #000;
+				padding: 10px;
+			}
 			.autobio {
-				width: 80%;
+				float: left;
+				padding: 20px;
+				width: 90%;
+				background-color: #000;
+				padding: 10px;
+				margin: 0;
+			}
+			@media (max-width: 600px) {
+				#logo, .autobio {
+					width: 100%;
+					height: auto;
+				}
+			}
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
 			}
 			footer {
 				background-color: rgb(30, 30, 30);
@@ -63,11 +85,6 @@
 				float: left;
 				width: 33%;
 				padding: 10px;
-			}
-			.row:after {
-				content: "";
-				display: table;
-				clear: both;
 			}
 			button {
 				color: white;
@@ -168,9 +185,11 @@
 		<div class="body">
 			<h1 class="welcome">Edward Wang</h1>
 			<h3 class="dvdr">&#11835;</h3>
-			<h2 class="me">Me</h2>
-			<img id="logo" src="Edward Wang Logo.png" height="50px">
-			<p class="autobio">My name is Edward Wang and I am currently an eighth grader at Basis Flagstaff. I have two sisters and I live in a suburban area in Flagstaff. I won 2<sup>nd</sup> place in the 2015 Coconino County Spelling Bee. I also won 3<sup>rd</sup> place in the 2018 <abbr title="Northern Arizona University">NAU</abbr> Piano Individual Contest and 1<sup>st</sup> place in the 2019 <abbr title="Northern Arizona University">NAU</abbr> Individual Contest and 1<sup>st</sup> in the 2019 <abbr title="Northern Arizona University">NAU</abbr> Concerto Contest. I am also able to speak Chinese (&#27721;&#35821;) , Japanese (&#26085;&#26412;&#35486;), Korean (&#54620;&#44397;), German (Deutsche), and Navajo (Diné Bizaad) to varying degrees.</p>
+			<div class="row">
+				<h2 class="me">Me</h2>
+				<img id="logo" src="Edward Wang Logo.png">
+				<p class="autobio">My name is Edward Wang and I am currently an eighth grader at Basis Flagstaff. I have two sisters and I live in a suburban area in Flagstaff. I won 2<sup>nd</sup> place in the 2015 Coconino County Spelling Bee. I also won 3<sup>rd</sup> place in the 2018 <abbr title="Northern Arizona University">NAU</abbr> Piano Individual Contest and 1<sup>st</sup> place in the 2019 <abbr title="Northern Arizona University">NAU</abbr> Individual Contest and 1<sup>st</sup> in the 2019 <abbr title="Northern Arizona University">NAU</abbr> Concerto Contest. I am also able to speak Chinese (&#27721;&#35821;) , Japanese (&#26085;&#26412;&#35486;), Korean (&#54620;&#44397;), German (Deutsche), and Navajo (Diné Bizaad) to varying degrees.</p>
+			</div>
 		</div>
 
 		<!--footer-->
