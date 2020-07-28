@@ -1,234 +1,244 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<!--
+    _/_/_/_/_/ _/      _/ _/_/_/_/_/ _/      _/ _/_/_/_/_/
+   _/      _/ _/_/    _/     _/     _/_/  _/_/ _/
+  _/_/_/_/_/ _/  _/  _/     _/     _/  _/  _/ _/_/_/_/
+ _/      _/ _/    _/_/     _/     _/      _/ _/
+_/      _/ _/      _/ _/_/_/_/_/ _/      _/ _/_/_/_/_/
+-->
 <html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="icon" href="Edward Wang Logo.ico" type="image/x-icon"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<title>Edward Wang</title>
-		<style>
-			* {
-  			box-sizing: border-box;
-			}
-			body {
-				color: white;
-				background-color: black;
-				font-family: "Raleway", sans-serif;
-			}
-			ul {
-  			list-style-type: none;
-  			margin: 0;
-  			padding: 0;
-  			overflow: hidden;
-  			background-color: rgb(30, 30, 30);
-			}
-			li {
-  			float: left;
-			}
-			li a {
-		  	display: block;
-  			color: white;
-  			text-align: center;
-  			padding: 14px 16px;
-  			text-decoration: none;
-			}
-			li a:hover {
-  			background-color: black;
-			}
-			.rightli {
-				background-color: green;
-				float: right;
-			}
-			.rightli a:hover {
-				background-color: rgb(0, 100, 0);
-			}
-			.welcome {
-				text-align: center;
-				font-size: 100px;
-			}
-			.dvdr {
-				text-align: center;
-				font-size: 50px;
-			}
-			#logo {
-				float: left;
-				width: 10%;
-				background: #000;
-				padding: 10px;
-			}
-			.autobio {
-				float: left;
-				padding: 20px;
-				width: 90%;
-				background-color: #000;
-				padding: 10px;
-				margin: 0;
-			}
-			@media (max-width: 600px) {
-				#logo, .autobio {
-					width: 100%;
-					height: auto;
-				}
-			}
-			.row:after {
-				content: "";
-				display: table;
-				clear: both;
-			}
-			footer {
-				background-color: rgb(30, 30, 30);
-			}
-			h6 {
-				font-size: 20px;
-				margin: 0;
-			}
-			.column {
-				float: left;
-				width: 33%;
-				padding: 10px;
-			}
-			button {
-				color: white;
-				font-family: "Raleway", sans-serif;
-				background-color: green;
-				width: 100%;
-				border: 0;
-				padding: 6px 15px;
-			}
-			button:hover {
-				background-color: rgb(0, 100, 0);
-			}
-			.fa {
-  			padding: 20px;
-  			font-size: 30px;
-  			width: 90px;
-				height: 70px;
-  			text-align: center;
-  			text-decoration: none;
-  			margin: 5px 2px;
-			}
-			.fa:hover {
-    		opacity: 0.7;
-			}
-			.fa-twitter {
-  			background: black;
-  			color: white;
-			}
-			.fa-youtube {
-  			background: black;
-  			color: white;
-			}
-			.fa-pinterest {
-  			background: black;
-  			color: white;
-			}
-			.fa-reddit {
-  			background: black;
-  			color: white;
-			}
-			#back2Top {
-				width: 40px;
-				line-height: 40px;
-				overflow: hidden;
-				z-index: 800;
-				display: none;
-				cursor: pointer;
-				-moz-transform: rotate(270deg);
-				-webkit-transform: rotate(270deg);
-				-o-transform: rotate(270deg);
-				-ms-transform: rotate(270deg);
-				transform: rotate(270deg);
-				position: fixed;
-				bottom: 50px;
-				right: 0;
-				background-color: rgb(221, 221, 221);
-				color: rgb(85, 85, 85);
-				text-align: center;
-				font-size: 30px;
-				text-decoration: none;
-			}
-			#back2top:hover {
-				background color: rgb(221, 221, 225);
-				color: rgb(0, 0, 0);
-			}
-		</style>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script>
-			$(window).scroll(function() {
-    		var height = $(window).scrollTop();
-    		if (height > 100) {
-        	$('#back2Top').fadeIn();
-    		} else {
-        $('#back2Top').fadeOut();
-    		}
-			});
-			$(document).ready(function() {
-    		$("#back2Top").click(function(event) {
-        	event.preventDefault();
-        	$("html, body").animate({ scrollTop: 0 }, "slow");
-        	return false;
-    		});
-			});
-		</script>
-	</head>
-	<body>
-		<!--Navigation Bar-->
-		<div class="nav-bar">
-			<ul>
-				<li title="The Home Page"><a href="file:///C:/Users/Kun/Downloads/Blog/Website/Blog_Home.html">Home</a></li>
-				<li title="See what's happening in my life"><a href="file:///C:/Users/Kun/Downloads/Blog/Website/Blog_Feed.html">Feed</a></li>
-				<li title="Contact me"><a>Contact</a></li>
-				<li title="This is a small autobiography :)" class="rightli"><a>About</a></li>
-			</ul>
-		</div>
+  <head>
+    <meta charset="utf-8">
+    <title>Animes I've Watched</title>
+    <style>
+      /* Styling the website pretty simply */
+      body {
+        color: rgb(255, 255, 255);
+        font-family:"Arial", sans-serif;
+        text-align: center;
+        background-color: rgb(0, 100, 150);
+      /* Changing header size */
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+      /* Aligning text due to body style */
+      ul, h3, p {
+        text-align: left;
+      }
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+        border: 1px solid #fff;
+        background-color: #f1f1f1;
+      }
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #ddd;
+      }
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #bbb;
+      }
+      /* Style the tab content */
+      .tabcontent, .arctabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+      /* Styling the star guide */
+      .starguide {
+        text-align: center;
+        margin: 0px;
+        padding: 5px;
+      }
+      .stars {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animes I've Watched</h1>
+    <h2>Animes That I've Completed</h2>
+    <ul id="fin">
+      <li>Naruto - ナルト</li>
+      <ul>
+        <li class="finished">Naruto - ナルト</li>
+      </ul>
+      <li class="finished"><ruby>S4E1<rt>ann. 10/20</rt></ruby> - Seven Deadly Sins - <ruby>七<rt>なな</rt></ruby>つの<ruby>大罪<rt>たいざい</rt></ruby></li>
+      <li class="finished">Love, Chunibyo, and Other Delusions - <ruby>中二病<rt>ちゅうにびょう</rt></ruby>でも<ruby>恋<rt>こい</rt></ruby>がしたい！</li>
+      <li class="finished">Ouran High School Host Club - <ruby>桜蘭<rt>おうらん</rt></ruby><ruby>高校<rt>こうこう</rt></ruby>ホスト<ruby>部<rt>クラブ</rt></ruby></li>
+      <li class="finished"><ruby>S3E1<rt>ann. 07/20</rt></ruby> - HERO≠MASK</li>
+      <li class="finished"><ruby>S2E1<rt>ann. 01/21</rt></ruby> - Cells At Work! - はたらく<ruby>細胞<rt>さいぼう</rt></ruby></li>
+      <li class="finished">Maid-Sama! - <ruby>会長<rt>かいちょう</rt></ruby>はメイド<ruby>様<rt>さま</rt></ruby></li>
+      <li class="finished"><ruby>S2E1<rt>no subs</rt></ruby> - Flowering Heart - <ruby>블라워링<rt>peulla-woring</rt></ruby> <ruby>하트<rt>hateu</rt></ruby></li>
+      <li class="finished">Monthly Girls' Nozaki Kun - <ruby>月刊<rt>げっかん</rt></ruby><ruby>少女<rt>しょうじょ</rt></ruby><ruby>野崎<rt>のざき</rt></ruby>くん</li>
+      <li class="finished">Forest of Piano - ピアノの<ruby>森<rt>もり</rt></ruby> - <ruby>海<rt>かい</rt></ruby>のパーフェクト<ruby>世界<rt>せかい</rt></ruby></li>
+    </ul>
+    <h3>Total: <span id="animeNumber"></span></h3>
+    <script>
+      var finishedList, listLength;
+      finishedList = document.getElementById("fin").getElementsByClassName("finished");
+      listLength = finishedList.length;
+      document.getElementById("animeNumber").innerHTML = listLength;
+    </script>
+    <h2>Reviews</h2>
+    <div class="tab">
+      <button class="arctablinks" onclick="openArchive(event, 'OneToSeven')">1 - 7</button>
+      <button class="arctablinks" onclick="openArchive(event, 'EightToFourteen')">8 - 14</button>
+    </div>
+    <div id="OneToSeven" class="arctabcontent">
+      <div class="tab">
+        <button class="tablinks" onclick="openReview(event, 'Naruto')"><ruby>Naruto<rt>ナルト</rt></ruby></button>
+        <button class="tablinks" onclick="openReview(event, 'SevenDeadlySins')"><ruby>Seven Deadly Sins<rt><ruby>七<rt>なな</rt></ruby>つの<ruby>大罪<rt>たいざい</rt></ruby></rt></ruby></button>
+        <button class="tablinks" onclick="openReview(event, 'LoveChunibyoAndOtherDelusions')"><ruby>Love, Chunibyo, and Other Delusions<rt><ruby>中二病<rt>ちゅうにびょう</rt></ruby>でも<ruby>恋<rt>こい</rt></ruby>がしたい！</rt></ruby></button>
+        <button class="tablinks" onclick="openReview(event, 'OuranHighSchoolHostClub')"><ruby>Ouran High School Host Club<rt><ruby>桜蘭<rt>おうらん</rt></ruby><ruby>高校<rt>こうこう</rt></ruby>ホスト<ruby>部<rt>クラブ</rt></ruby></rt></ruby></button>
+        <button class="tablinks" onclick="openReview(event, 'HeroMask')"><ruby>HERO≠MASK<rt>&nbsp;</rt></ruby></button>
+        <button class="tablinks" onclick="openReview(event, 'CellsAtWork')"><ruby>Cells at Work!<rt>はたらく<ruby>細胞<rt>さいぼう</rt></ruby></rt></ruby></button>
+        <button class="tablinks" onclick="openReview(event, 'MaidSama')"><ruby>Maid-Sama!<rt><ruby>会長<rt>かいちょう</rt></ruby>はメイド<ruby>様<rt>さま</rt></ruby></rt></ruby></button>
+      </div>
+      <div id="Naruto" class="tabcontent">
+        <h3>
+          Naruto
+          <br>ナルト
+          <br>★★★☆☆
+        </h3>
+        <p>It started of very well, but the further I got into the show, the more filler there was, making the rest of the anime a bit more boring. Even though that happened, the anime was still pretty good, though I found none of the main characters very likeable. Naruto is annoying, Sakura is useless, and Sasuke is absolutely retarded. My favorite characters would probably be Kakashi or Haku. In the end, I think that all in all, that anime was pretty good, and I am not looking forward to Naruto Shipp&#363;den.</p>
+      </div>
+      <div id="SevenDeadlySins" class="tabcontent">
+        <h3>
+          Seven Deadly Sins
+          <br><ruby>七<rt>なな</rt></ruby>つの<ruby>大罪<rt>たいざい</rt></ruby>
+          <br>★★★★☆
+        </h3>
+        <p>This was a wonderful anime. It was full of action and twists and surprise that were woven together intricately and interestingly. The only thing I didn't like about Seven Deadly Sins was that it felt somewhat rushed, but I seriously enjoyed this anime. I am very excited for the new season. Again, Elizabeth seems somewhat useless and weak, and her Apostles' Eye doesn't always seem to do what it is supposed to do. I would like to see more Diane x King action because they are such a cute couple! :D</p>
+      </div>
+      <div id="LoveChunibyoAndOtherDelusions" class="tabcontent">
+        <h3>
+          Love, Chunibyo, and Other Delusions
+          <br><ruby>中二病<rt>ちゅうにびょう</rt></ruby>でも<ruby>恋<rt>こい</rt></ruby>がしたい！
+          <br>★★☆☆☆
+        </h3>
+        <p>This anime started out well, but it became more of a romance anime the further in I went, although I should've expected that with a name like <b>Love</b>, Chunibyo, and Other Delusions. I did want to see Shinka to be proven as the legitimate Morisummer, but I never got that satisfaction, with Dekomori continuing to denounce her claims to have written the Mabinogion. I do have to say I have agree with Toka, Rikka's sister. Rikka can't grow up continuing the way she is, and I do believe Chunibyo is <b>EXTREMELY</b> embarassing. If I ever met someone like that, I would probably have committed suicide.</p>
+      </div>
+      <div id="OuranHighSchoolHostClub" class="tabcontent">
+        <h3>
+          Ouran High School Host Club
+          <br><ruby>桜蘭<rt>おうらん</rt></ruby><ruby>高校<rt>こうこう</rt></ruby>ホスト<ruby>部<rt>クラブ</rt></ruby>
+          <br>★★★★★
+        </h3>
+        <p>This anime was brilliant. I love the twist on the poor person in rich society clich&#233;. Each character has different personalities that blend so well in the Host Club. I found it very enjoyable and hilarious to watch. I definitely wish there were more episodes. I also enjoyed the rich person questions commoner objects clich&#233;. Tamaki, Hikaru, and Kaoru are all hilarious to watch, and I enjoy the shifting focus between the characters. Definite 5 out of 5.</p>
+      </div>
+      <div id="HeroMask" class="tabcontent">
+        <h3>
+          HERO≠MASK
+          <br><ruby>&nbsp;<rt>&nbsp;</rt></ruby>
+          <br>★★★★★
+        </h3>
+        <p>I loved this anime and its interesting concept. I enjoyed all the thrill from the show. I loved the inclusion of interesting technology, such as the GPS bullets and the Masks, and the motivations and story just connect so well. Many questions are answered as the plot progresses, and continuous twists make the plot interesting to watch. I was definitely hooked, and the concept and plot were definitely well construct. Hiroyasu Aoki, give yourself a big round of applause.
+        </p>
+      </div>
+      <div id="CellsAtWork" class="tabcontent">
+        <h3>
+          Cells at Work!
+          <br>はたらく<ruby>細胞<rt>さいぼう</rt></ruby>
+          <br>★★★★★
+        </h3>
+        <p>Dude... This hurt me in the feels really hard. Everything was fine for the first eleven episodes, but then it got into <b>hemorrhagic shock</b>, and that made me cry so hard. There was so much death and destruction that it was literally impossible to cry. I don't know where Kouhai went, but I think she's dead now, and literally everyone's dead. The show left me feeling satisfied in a sad way, and now I definitely need to see season 2. The idea of anthropomorphic cells was fairly original, and it was so interesting learning biology through anime, although it does pose some insignificant questions, like whether these anthropomorphic cells have their own immune system, and so on so forth. Definitely recommend if you don't cry as much as me (literally everyone).</p>
+      </div>
+      <div id="MaidSama" class="tabcontent">
+        <h3>
+          Maid-Sama!
+          <br><ruby>会長<rt>かいちょう</rt></ruby>はメイド<ruby>様<rt>さま</rt></ruby>
+          <br>★★★☆☆
+        </h3>
+        <p>This was a somewhat fun anime to watch. I did think it was interesting to see a kuudere-tsundere relationship, although it is used quite a bit in other shows. Again, I didn't like the romance aspect, and I do think that the love triangle that is commonly used was used here (the one where she meets a guy at school, but then her childhood friend reappears, this one being a kuudere-tsundere-deredere triangle). I wouldn't exactly be excited for a second season, but I did enjoy the plot of the story, and I have to say that I didn't regret watching this anime.</p>
+      </div>
+    </div>
+    <div id="EightToFourteen" class="arctabcontent">
+      <div class="tab">
+        <button class="tablinks" onclick="openReview(event, 'FloweringHeart')"><ruby>Flowering Heart<rt><ruby>블라워링<rt>peulla-woring</rt></ruby> <ruby>하트<rt>hateu</rt></ruby></rt></ruby></button>
+        <button class="tablinks" onclick="openReview(event, 'MonthlyGirlsNozakiKun')"><ruby>Monthly Girls' Nozaki Kun<rt><ruby>月刊<rt>げっかん</rt></ruby><ruby>少女<rt>しょうじょ</rt></ruby><ruby>野崎<rt>のざき</rt></ruby>くん</rt></ruby></button>
+        <button class="tablinks" onclick="openReview(event, 'ForestOfPiano')"><ruby>Forest of Piano<rt>ピアノの<ruby>森<rt>もり</rt></ruby> - <ruby>海<rt>かい</rt></ruby>のパーフェクト<ruby>世界<rt>せかい</rt></ruby></rt></ruby></button>
+      </div>
+      <div id="FloweringHeart" class="tabcontent">
+        <h3>
+          Flowering Heart
+          <br><ruby>블라워링<rt>peulla-woring</rt></ruby> <ruby>하트<rt>hateu</rt></ruby>
+          <br>★★★★★
+        </h3>
+        <p>I feel like this show is definitely underrated by many people. While it does include the magical girl plot, it is able to twist it, making the show darker and more interesting than other magical girl plots like Glitter Force. Korea definitely knows what they're doing. I was definitely invested in the many storylines offered, such as the Ari-Suha-Min plotline, the Shuel plotline (which was my favorite to see, with her trying to destroy the Problem Solving Club inside out), and the Trump-
 
-		<!--The body of the website-->
-		<div class="body">
-			<h1 class="welcome">Edward Wang</h1>
-			<h3 class="dvdr">&#11835;</h3>
-			<div class="row">
-				<h2 class="me">Me</h2>
-				<img id="logo" src="Edward Wang Logo.png">
-				<p class="autobio">My name is Edward Wang and I am currently an eighth grader at Basis Flagstaff. I have two sisters and I live in a suburban area in Flagstaff. I won 2<sup>nd</sup> place in the 2015 Coconino County Spelling Bee. I also won 3<sup>rd</sup> place in the 2018 <abbr title="Northern Arizona University">NAU</abbr> Piano Individual Contest and 1<sup>st</sup> place in the 2019 <abbr title="Northern Arizona University">NAU</abbr> Individual Contest and 1<sup>st</sup> in the 2019 <abbr title="Northern Arizona University">NAU</abbr> Concerto Contest. I am also able to speak Chinese (&#27721;&#35821;) , Japanese (&#26085;&#26412;&#35486;), Korean (&#54620;&#44397;), German (Deutsche), and Navajo (Diné Bizaad) to varying degrees.</p>
-			</div>
-		</div>
-
-		<!--footer-->
-		<footer class="row">
-			<div class="column">
-				<h6>About</h6>
-				<h6><b>&#8212;</b></h6>
-				<p>This website couldn't have been made without the following people:
-				<br>Savannah "Meap" Valez
-				<br>Neill Wiederzheng
-				<br>"Snowflake" Tchukuvista
-				<br>Chico Koruvista
-				<br>Ciuniu Gatoreinn
-				<br>Connor Undor</p>
-				<button>Learn More About These People!</button>
-			</div>
-			<div class="column">
-				<h6>Contact</h6>
-				<h6><b>&#8212;</b></h6>
-				<p>So...
-				<br>Do you have any questions?
-				<br>Queries?
-				<br>Comments?
-				<br>Questiaplescants?
-				<br>Anything you'd like to say?
-				<br>If so, click the button below.</p>
-				<button>Contact Me!</button>
-			</div>
-			<div class="column">
-				<h6>Copyright</h6>
-				<h6><b>&#8212;</b></h6>
-				<p>All rights reserved. Edward Wang &#169; 2019.</p>
-				<h6>Find me:</h6>
-				<a href="https://twitter.com/realitatis0" class="fa fa-twitter"></a>
-				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-youtube"></a>
-				<a href="https://www.pinterest.com/livingunderthesofa" class="fa fa-pinterest"></a>
-				<a href="https://www.reddit.com/user/thejumpingjackal" class="fa fa-reddit"></a>
-			</div>
-			<a id="back2Top" title="Back to top" href="#">&#10148;</a>
-		</footer>
-	</body>
+          Mao plotline. I definitely hope that the second season gets subbed soon because I love this show so much. Definitely a 10/10. :)</p>
+      </div>
+      <div id="MonthlyGirlsNozakiKun" class="tabcontent">
+        <h3>
+          Monthly Girls' Nozaki Kun
+          <br><ruby>月刊<rt>げっかん</rt></ruby><ruby>少女<rt>しょうじょ</rt></ruby><ruby>野崎<rt>のざき</rt></ruby>くん
+          <br>★★★★☆
+        </h3>
+        <p>I really enjoyed this anime. The characters are quirky and unique, and there were many ridiculous parts that I laughed at. It was very interesting watching Nozaki work on his manga with Chiyo and others. I enjoyed Yuzuki Seo for her CrAzY attitude, although I did want to see Wakamatsu's face when he finds out Lorelei = Yuzuki Seo. I was interested through and through, enjoying the more slice-of-life-ish moments. Although the ending did leave me a bit dissatisfied, I have to say that it was expected since Nozaki is very blind to the fact that Chiyo has a crush on her. All in all, great anime. :)</p>
+      </div>
+      <div id="ForestOfPiano" class="tabcontent">
+        <h3>
+          Forest of Piano
+          <br>ピアノの<ruby>森<rt>もり</rt></ruby> - <ruby>海<rt>かい</rt></ruby>のパーフェクト<ruby>世界<rt>せかい</rt></ruby>
+          <br>★★★☆☆
+        </h3>
+        <p>This anime was mediocre. It did inspire me to practice my piano more, but the story seemed to be lacking something. It was worth the time, but it continued to feel like something was lacking in the story. The whole of the second season obcessantly detailed the Chopin competition, and it did become progressively boring. The piano playing was very beautiful, but the whole "Kai is playing different accents and dynamics" doesn't really check out; His piano sounds really similar to the other contestants. I also feel that Pang Wei was an excuse for Japan to make fun of China, although that might stem from my personal bias. I was left unsatisfied by the ending, but I believe that had the anime had more money in their budget, they could've pulled off this anime better.</p>
+      </div>
+    </div>
+    <script>
+      function openReview(evt, animeName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(animeName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+    <script>
+      function openArchive(evt, archiveName) {
+        var i, arctabcontent, tablinks;
+        arctabcontent = document.getElementsByClassName("arctabcontent");
+        for (i = 0; i < arctabcontent.length; i++) {
+          arctabcontent[i].style.display = "none";
+        }
+        arctablinks = document.getElementsByClassName("arctablinks");
+        for (i = 0; i < arctablinks.length; i++) {
+          arctablinks[i].className = arctablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(archiveName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+    <h2>Animes I'm Currently Watching</h2>
+    <ul>
+      <li>S2E24 - Haikyuu!! - ハイキュー！！</li>
+      <li>Forest of Piano - ピアノの<ruby>森<rt>もり</rt></ruby> - <ruby>海<rt>かい</rt></ruby>のパーフェクト<ruby>世界<rt>せかい</rt></ruby></li>
+      <li>S1E5 - BNA: Brand New Animal - BNA ビー・エヌ・エー</li>
+      <li>Naruto - ナルト</li>
+      <ul>
+        <li>E113 Naruto Shipp&#363;den - ナルト<ruby>疾風伝<rt>しっぷうでん</rt></ruby></li>
+      </ul>
+    </ul>
+  </body>
 </html>
