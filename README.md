@@ -1,7 +1,7 @@
-# thejumpingjackal.github.io
+# Animes I've Watched
 
 ### Contents
-* Website
+* [Website](#Website)
 * Them Links Tho...
 
 ## Website
