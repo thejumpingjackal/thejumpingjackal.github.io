@@ -10,64 +10,7 @@ _/      _/ _/      _/ _/_/_/_/_/ _/      _/ _/_/_/_/_/
   <head>
     <meta charset="utf-8">
     <title>Animes I've Watched</title>
-    <style>
-      /* Styling the website pretty simply */
-      body {
-        color: rgb(255, 255, 255);
-        font-family:"Arial", sans-serif;
-        text-align: center;
-        background-color: rgb(0, 100, 150);
-      /* Changing header size */
-      }
-      h1 {
-        font-size: 2.5em;
-      }
-      /* Aligning text due to body style */
-      ul, h3, p {
-        text-align: left;
-      }
-      /* Style the tab */
-      .tab {
-        overflow: hidden;
-        border: 1px solid #fff;
-        background-color: #f1f1f1;
-      }
-      /* Style the buttons inside the tab */
-      .tab button {
-        background-color: inherit;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.3s;
-        font-size: 17px;
-      }
-      /* Change background color of buttons on hover */
-      .tab button:hover {
-        background-color: #ddd;
-      }
-      /* Create an active/current tablink class */
-      .tab button.active {
-        background-color: #bbb;
-      }
-      /* Style the tab content */
-      .tabcontent, .arctabcontent {
-        display: none;
-        padding: 6px 12px;
-        border: 1px solid #ccc;
-        border-top: none;
-      }
-      /* Styling the star guide */
-      .starguide {
-        text-align: center;
-        margin: 0px;
-        padding: 5px;
-      }
-      .stars {
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="frontpage.css">
   </head>
   <body>
     <h1>Animes I've Watched</h1>
@@ -89,6 +32,7 @@ _/      _/ _/      _/ _/_/_/_/_/ _/      _/ _/_/_/_/_/
     </ul>
     <h3>Total: <span id="animeNumber"></span></h3>
     <script>
+      /* Changes number of animes watched continuously */
       var finishedList, listLength;
       finishedList = document.getElementById("fin").getElementsByClassName("finished");
       listLength = finishedList.length;
@@ -201,6 +145,7 @@ _/      _/ _/      _/ _/_/_/_/_/ _/      _/ _/_/_/_/_/
       </div>
     </div>
     <script>
+      /* Functions that allow for the review tabs to work */
       function openReview(evt, animeName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -214,8 +159,6 @@ _/      _/ _/      _/ _/_/_/_/_/ _/      _/ _/_/_/_/_/
         document.getElementById(animeName).style.display = "block";
         evt.currentTarget.className += " active";
       }
-    </script>
-    <script>
       function openArchive(evt, archiveName) {
         var i, arctabcontent, tablinks;
         arctabcontent = document.getElementsByClassName("arctabcontent");
@@ -232,13 +175,28 @@ _/      _/ _/      _/ _/_/_/_/_/ _/      _/ _/_/_/_/_/
     </script>
     <h2>Animes I'm Currently Watching</h2>
     <ul>
-      <li>S2E24 - Haikyuu!! - ハイキュー！！</li>
-      <li>Forest of Piano - ピアノの<ruby>森<rt>もり</rt></ruby> - <ruby>海<rt>かい</rt></ruby>のパーフェクト<ruby>世界<rt>せかい</rt></ruby></li>
-      <li>S1E5 - BNA: Brand New Animal - BNA ビー・エヌ・エー</li>
+      <li onclick="episodesToWatch('Haikyuu!!', 'ハイキュー！！', 0);">S3E1 - Haikyuu!! - ハイキュー！！</li>
+      <li onclick="episodesToWatch('The Disastrous Life of Saiki K.', '斉木楠雄のΨ難', 5);">S1E14 - The Disastrous Life of Saiki K. - <ruby>斉木<rt>さいき</rt></ruby><ruby>楠雄<rt>くすお</rt></ruby>の<ruby>Ψ難<rt>さいなん</rt></ruby></li>
+      <li onclick="episodesToWatch('BNA: Brand New Animal', 'ビー・エヌ・エー', 4);">S1E5 - BNA: Brand New Animal - BNA ビー・エヌ・エー</li>
+      <li onclick="episodesToWatch('Clannad', 'クラナド', 3);">V1E4 - Clannad - クラナド</li>
+      <li onclick="episodesToWatch('K-On!', 'けいおん！', 2);">S1E2 - K-On! - けいおん！</li>
       <li>Naruto - ナルト</li>
       <ul>
         <li>E113 Naruto Shipp&#363;den - ナルト<ruby>疾風伝<rt>しっぷうでん</rt></ruby></li>
       </ul>
     </ul>
+    <script>
+      function episodesToWatch(anime, japName, num) {
+        if (anime === "Haikyuu!!") {
+          alert(anime + " (" + japName + ") cannot be watched on Netflix.\nIt can only be watched during the day at 4anime.to");
+        } else {
+          if (num > 1) {
+            alert("For " + anime + " (" + japName + "), you must watch " + num + " episodes in a row.");
+          } else {
+            alert("For " + anime + " (" + japName + "), you must watch " + num + " episode.");
+          }
+        }
+      }
+    </script>
   </body>
 </html>
