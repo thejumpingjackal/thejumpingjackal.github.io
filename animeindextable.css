@@ -1,9 +1,15 @@
-table {
-  width: 80%;
-  margin: auto;
+.divic {
+  width:99%;
+}
+
+.indexcontainer {
+  margin:10px;
 }
 
 .index {
+  margin: 5px;
+  float:left;
+  width: 100%
   width: 252px;
   height: 379px;
   background-position: center center;
