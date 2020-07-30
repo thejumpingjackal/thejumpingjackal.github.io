@@ -36,7 +36,7 @@ if($_POST["submit"]) {
     <h1>Contact Me Here</h1>
     <h2>Find a bug? Find something you might want me to add to the site? Find me personally annoying? Then I recommend contacting me!</h2>
     <div class="contactform">
-      <form action="contact.php" method="post" enctype=”multipart/form-data” name="contactform">
+      <form action="about.php" method="post" enctype=”multipart/form-data” name="contactform">
         <label for="fullname">Full Name*</label>
         <input type="text" id="fullname" name="fullname" placeholder="Your full name..." required>
 
