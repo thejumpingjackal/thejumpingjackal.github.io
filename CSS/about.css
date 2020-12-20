@@ -13,3 +13,68 @@
   width:200px;
   border-radius: 50%;
 }
+
+span {
+  font-family:"Freestyle Script", "Arial", sans-serif;
+}
+
+iframe {
+  border: 0px;
+  float: left;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 51.95%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.uncollapse, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: rgb(10, 110, 160);
+  border: 2px #555 solid;
+}
+
+.confirm {
+  background-color: #555;
+  color: white;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+#confirmdiv {
+  margin: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  width: 100%
+}
+
+td, th {
+  border: 1px white solid;
+  padding: 10px;
+  margin: 0px;
+  border-collapse:collapse;
+}
+
+#edof {
+  width: 35%;
+}
