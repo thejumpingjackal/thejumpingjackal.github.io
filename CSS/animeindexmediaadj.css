@@ -13,7 +13,14 @@
 }
 
 /*3 row*/
-@media only screen and (min-width: 1095px) and (max-width: 1509px) {
+@media only screen and (min-width: 1295px) and (max-width: 1509px) {
+  .indexcontainer {
+    height: 1160px;
+  }
+}
+
+/*3 row*/
+@media only screen and (min-width: 1095px) and (max-width: 1294px) {
   .indexcontainer {
     height: 1560px;
   }
