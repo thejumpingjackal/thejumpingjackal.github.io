@@ -1,19 +1,28 @@
-// Get the button:
-let mybutton = document.getElementById("myBtn");
+// Get the scroll-to-top button element by its id
+let scrollToTopButton = document.getElementById("scrollToTopButton");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-   		mybutton.style.display = "block";
-  	} else {
-   		mybutton.style.display = "none";
-  	}
+// Function to update the button's visibility
+function toggleScrollButton() {
+    if (window.scrollY >= 50) {
+        // If scrolled down 50px or more, display the button
+        scrollToTopButton.style.display = "block";
+    } else {
+        // If not scrolled down enough, hide the button
+        scrollToTopButton.style.display = "none";
+    }
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  	document.body.scrollTop = 0; // For Safari
-  	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+// Add a scroll event listener to show/hide the button
+window.addEventListener("scroll", toggleScrollButton);
+
+// Add a click event listener to scroll to the top when the button is clicked
+scrollToTopButton.addEventListener("click", function () {
+    // Scroll smoothly to the top of the page
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
+
+// Call the toggleScrollButton function once to set the initial state
+toggleScrollButton();
