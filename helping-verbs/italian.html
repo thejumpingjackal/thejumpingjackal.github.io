@@ -16,16 +16,34 @@
 		}
 
 		a {
-			text-decoration: none;
-  			box-shadow: inset 0 0 0 0 #54b3d6;
+  			text-decoration: none;
   			color: #54b3d6;
   			margin: 0 -.25rem;
   			padding: 0 .25rem;
-  			transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  			transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  			position: relative;
+		}
+
+		a::before {
+  			content: "";
+  			position: absolute;
+  			top: 0;
+  			left: 0;
+  			width: 100%;
+  			height: 100%;
+  			background-color: #54b3d6;
+  			z-index: -1;
+  			transform: scaleX(0);
+  			transform-origin: right;
+  			transition: transform .3s ease-in-out;
+		}
+
+		a:hover::before {
+  			transform: scaleX(1);
+  			transform-origin: left;
 		}
 
 		a:hover {
-  			box-shadow: inset 100px 0 0 0 #54b3d6;
   			color: white;
 		}
 
@@ -39,7 +57,7 @@
 
 		.column {
   			float: left;
-  			width: 40%;
+  			width: 45%;
   			margin-right:2em;
 		}
 
@@ -73,14 +91,22 @@
 	<body>
 		<button onclick="topFunction()" id="myBtn" title="Go to top">🡅</button>
 
-		<h4><b>Italiano</b> | <a>Español</a> | <a>Português</a> | <a>Français</a> | <a>Română</a></h4>
+		<h4><a href="./latin.html">Latin</a> | <b>Italiano</b> | <a href="./spanish.html">Español</a> | <a href="./portuguese.html">Português</a> | <a href="./french.html">Français</a> | <a href="./romanian.html">Română</a> | <a href="./mandarin.html">中文</a></h4>
 
 		<h1>Italian Helping Verbs</h1>
 		<h3><a href="#essere">essere</a><br>
 		<a href="#avere">avere</a><br>
 		<a href="#tenere">tenere*</a><br>
 		<a href="#stare">stare*</a><br>
-		<a href="#andare">andare</a></h3>
+		<a href="#andare">andare*</a><br>
+		<a href="#volere">volere*</a><br>
+		<a href="#samples">sample texts:</a><br>
+		<a href="#UDHR">--- Universal Declaration of Human Rights</a><br>
+		<a href="#Nessun_dorma">--- Nessun dorma</a><br>
+		<a href="#Coro_di_Zingari">--- Coro di Zingari</a><br>
+		<a href="#The_Moon_Over_Me">--- The Moon Over Me</a><br>
+		<a href="#The_Hobbit">--- The Hobbit</a><br>
+		<a href="#Eye_Sea">--- Eye Sea</a></h3>
 
 		<h2 id="essere">essere - to be</h2>
 
@@ -1117,7 +1143,7 @@
 				</tr>
 				<tr>
 					<th rowspan="4" style="background:#C0CFE4; width:3.125%" class="rotate"><span title="compound">compound</span></th>
-					<th style="height:3em; background:#E4C0D4"><span title="passato prossimo">passato prossimo*</span></th>
+					<th style="height:3em; background:#C0CFE4"><span title="passato prossimo">passato prossimo*</span></th>
 					<td>sono andato/a</td>
 					<td>sei andato/a</td>
 					<td>è andato/a</td>
@@ -1126,7 +1152,7 @@
 					<td>sono andati/e</td>
 				</tr>
 				<tr>
-					<th style="height:3em; background:#E4C0D4"><span title="trapassato prossimo">trapassato prossimo</span></th>
+					<th style="height:3em; background:#C0CFE4"><span title="trapassato prossimo">trapassato prossimo</span></th>
 					<td>ero andato/a</td>
 					<td>eri andato/a</td>
 					<td>era andato/a</td>
@@ -1135,7 +1161,7 @@
 					<td>erano andati/e</td>
 				</tr>
 				<tr>
-					<th style="height:3em; background:#E4C0D4"><span title="trapassato remoto">trapassato remoto</span></th>
+					<th style="height:3em; background:#C0CFE4"><span title="trapassato remoto">trapassato remoto</span></th>
 					<td>fui andato/a</td>
 					<td>fosti andato/a</td>
 					<td>fu andato/a</td>
@@ -1144,7 +1170,7 @@
 					<td>furono andati/e</td>
 				</tr>
 				<tr>
-					<th style="height:3em; background:#E4C0D4"><span title="futuro anteriore">futuro anteriore</span></th>
+					<th style="height:3em; background:#C0CFE4"><span title="futuro anteriore">futuro anteriore</span></th>
 					<td>sarò andato/a</td>
 					<td>sarai andato/a</td>
 					<td>sarà andato/a</td>
@@ -1280,6 +1306,680 @@
 			</tbody>
 		</table>
 
+		<br>
+
+		<h2 id="volere">volere* - to want</h2>
+
+		<div class="row">
+  			<div class="column"><p><b>volere</b> does not see any use as an auxiliary verb in Italian.</p></div>
+  			<div class="column"><p><b>volere</b> non è usato come verbo ausiliare in italiano.</p></div>
+		</div>
+
+		<table style="background:#F0F0F0; border-collapse:separate; border-spacing:2px; width:100%">
+			<tbody>
+				<tr>
+					<th colspan="2" style="height:2em" title="volere">volere</th>
+					<th colspan="3" title="marks important verb forms to know">*marks important verb forms to know</th>
+					<th colspan="3" title="segna forme verbali importanti da conoscere">*segna forme verbali importanti da conoscere</th>
+				</tr>
+				<tr>
+					<th colspan="2" rowspan="2" style="height:4em; background:#C0C0C0">person</th>
+					<th colspan="3" style="background:#C0C0C0">singular</th>
+					<th colspan="3" style="background:#C0C0C0">plural</th>
+				</tr>
+				<tr>
+					<th style="background:#C0C0C0; width:12.5%">first</th>
+					<th style="background:#C0C0C0; width:12.5%">second</th>
+					<th style="background:#C0C0C0; width:12.5%">third</th>
+					<th style="background:#C0C0C0; width:12.5%">first</th>
+					<th style="background:#C0C0C0; width:12.5%">second</th>
+					<th style="background:#C0C0C0; width:12.5%">third</th>
+				</tr>
+				<tr>
+					<th colspan="2" style="height:3em; background:#C0CFE4"><span title="indicativo">indicativo</span></th>
+					<th style="background:#C0CFE4">io</th>
+					<th style="background:#C0CFE4">tu</th>
+					<th style="background:#C0CFE4">lui/lei, esso/essa</th>
+					<th style="background:#C0CFE4">noi</th>
+					<th style="background:#C0CFE4">voi</th>
+					<th style="background:#C0CFE4">loro, essi/esse</th>
+				</tr>
+				<tr>
+					<th rowspan="4" style="background:#C0CFE4; width:3.125%" class="rotate"><span title="simple">simple</span></th>
+					<th style="height:3em; background:#C0CFE4"><span title="presente">presente*</span></th>
+					<td>voglio</td>
+					<td>vuoi</td>
+					<td>voule</td>
+					<td>vogliamo</td>
+					<td>volete</td>
+					<td>vogliono</td>
+				</tr>
+				<tr>
+					<th style="height:3em; background:#C0CFE4"><span title="imperfetto">imperfetto*</span></th>
+					<td>volevo</td>
+					<td>volevi</td>
+					<td>voleva</td>
+					<td>volevamo</td>
+					<td>volevate</td>
+					<td>volevano</td>
+				</tr>
+				<tr>
+					<th style="height:3em; background:#C0CFE4"><span title="passato remoto">passato remoto</span></th>
+					<td>volli</td>
+					<td>vollesti</td>
+					<td>volle</td>
+					<td>vollemmo</td>
+					<td>volleste<o/td>
+					<td>vollero</td>
+				</tr>
+				<tr>
+					<th style="height:3em; background:#C0CFE4"><span title="futuro semplice*">futuro semplice*</span></th>
+					<td>vorrò</td>
+					<td>vorrai</td>
+					<td>vorrà</td>
+					<td>vorremo</td>
+					<td>vorrete</td>
+					<td>vorranno</td>
+				</tr>
+				<tr>
+					<th rowspan="4" style="background:#C0CFE4; width:3.125%" class="rotate"><span title="compound">compound</span></th>
+					<th style="height:3em; background:#C0CFE4"><span title="passato prossimo">passato prossimo*</span></th>
+					<td>ho voluto/a</td>
+					<td>hai voluto/a</td>
+					<td>ha voluto/a</td>
+					<td>abbiamo voluti/e</td>
+					<td>avete voluti/e</td>
+					<td>hanno voluti/e</td>
+				</tr>
+				<tr>
+					<th style="height:3em; background:#C0CFE4"><span title="trapassato prossimo">trapassato prossimo</span></th>
+					<td>avevo voluto/a</td>
+					<td>avevi voluto/a</td>
+					<td>aveva voluto/a</td>
+					<td>avevamo voluti/e</td>
+					<td>avevate voluti/e</td>
+					<td>avevano voluti/e</td>
+				</tr>
+				<tr>
+					<th style="height:3em; background:#C0CFE4"><span title="trapassato remoto">trapassato remoto</span></th>
+					<td>ebbi voluto/a</td>
+					<td>avesti voluto/a</td>
+					<td>ebbe voluto/a</td>
+					<td>avemmo voluti/e</td>
+					<td>aveste voluti/e</td>
+					<td>ebbero voluti/e</td>
+				</tr>
+				<tr>
+					<th style="height:3em; background:#C0CFE4"><span title="futuro anteriore">futuro anteriore</span></th>
+					<td>avrò voluto/a</td>
+					<td>avrai voluto/a</td>
+					<td>avrà voluto/a</td>
+					<td>avremo voluti/e</td>
+					<td>avrete voluti/e</td>
+					<td>avranno voluti/e</td>
+				</tr>
+				<tr>
+					<th colspan="2" style="height:3em; background:#C0E4C0"><span title="congiuntivo">congiuntivo</span></th>
+					<th style="background:#C0E4C0">che io</th>
+					<th style="background:#C0E4C0">che tu</th>
+					<th style="background:#C0E4C0">che lui/lei, che esso/essa</th>
+					<th style="background:#C0E4C0">che noi</th>
+					<th style="background:#C0E4C0">che voi</th>
+					<th style="background:#C0E4C0">che loro, che essi/esse</th>
+				</tr>
+				<tr>
+					<th rowspan="2" style="background:#C0E4C0; width:3.125%" class="rotate"><span title="simple">simple</span></th>
+					<th style="height:3em; background:#C0E4C0"><span title="presente">presente</span></th>
+					<td>voglia</td>
+					<td>voglia</td>
+					<td>voglia</td>
+					<td>vogliamo</td>
+					<td>vogliate</td>
+					<td>vogliano</td>
+				</tr>
+				<tr>
+					<th style="height:3em; background:#C0E4C0"><span title="imperfetto">imperfetto</span></th>
+					<td>volessi</td>
+					<td>volessi</td>
+					<td>volesse</td>
+					<td>volessimo</td>
+					<td>voleste</td>
+					<td>volessero</td>
+				</tr>
+				<tr>
+					<th rowspan="2" style="background:#C0E4C0; width:3.125%" class="rotate"><span title="compound">compound</span></th>
+					<th style="height:3em; background:#C0E4C0"><span title="passato">passato</span></th>
+					<td>abbia voluto/a</td>
+					<td>abbia voluto/a</td>
+					<td>abbia voluto/a</td>
+					<td>abbiamo voluti/e</td>
+					<td>abbiate voluti/e</td>
+					<td>abbiano voluti/e</td>
+				</tr>
+				<tr>
+					<th style="height:3em; background:#C0E4C0"><span title="trapassato">trapassato</span></th>
+					<td>avessi voluto/a</td>
+					<td>avessi voluto/a</td>
+					<td>avesse voluto/a</td>
+					<td>avessimo voluti/e</td>
+					<td>aveste voluti/e</td>
+					<td>avessero voluti/e</td>
+				</tr>
+				<tr>
+					<th colspan="2" style="height:3em; background:#C0D8E4"><span title="condizionale">condizionale</span></th>
+					<th style="background:#C0D8E4">io</th>
+					<th style="background:#C0D8E4">tu</th>
+					<th style="background:#C0D8E4">lui/lei esso/essa</th>
+					<th style="background:#C0D8E4">noi</th>
+					<th style="background:#C0D8E4">voi</th>
+					<th style="background:#C0D8E4">loro, essi/esse</th>
+				</tr>
+				<tr>
+					<th style="background:#C0D8E4; width:3.125%" class="rotate"><span title="simple">sim.</span></th>
+					<th style="height:3em; background:#C0D8E4"><span title="presente">presente*</span></th>
+					<td>vorrei</td>
+					<td>vorresti</td>
+					<td>vorrebbe</td>
+					<td>vorremmo</td>
+					<td>vorreste</td>
+					<td>vorrebbero</td>
+				</tr>
+				<tr>
+					<th style="background:#C0D8E4; width:3.125%" class="rotate"><span title="compound">com.</span></th>
+					<th style="height:3em; background:#C0D8E4"><span title="passato">passato</span></th>
+					<td>avrei voluto/a</td>
+					<td>avresti voluto/a</td>
+					<td>avrebbe voluto/a</td>
+					<td>avremmo voluti/e</td>
+					<td>avreste voluti/e</td>
+					<td>avrebbero voluti/e</td>
+				</tr>
+				<tr>
+					<th colspan="2" style="height:3em; background:#E4D4C0"><span title="imperativo">imperativo</span></th>
+					<th style="background:#E4D4C0">—</th>
+					<th style="background:#E4D4C0">tu</th>
+					<th style="background:#E4D4C0">Lei</th>
+					<th style="background:#E4D4C0">noi</th>
+					<th style="background:#E4D4C0">voi</th>
+					<th style="background:#E4D4C0">Loro</th>
+				</tr>
+				<tr>
+					<th colspan="2" style="height:3em; background:#E4D4C0"><span title="positivo">positivo</span></th>
+					<td></td>
+					<td>vogli</td>
+					<td>voglia</td>
+					<td>vogliamo</td>
+					<td>vogliate</td>
+					<td>vogliano</td>
+				</tr>
+				<tr>
+					<th colspan="2" style="height:3em; background:#E4D4C0"><span title="negativo">negativo</span></th>
+					<td></td>
+					<td>non volere</td>
+					<td>non voglia</td>
+					<td>non vogliamo</td>
+					<td>non vogliate</td>
+					<td>non vogliano</td>
+				</tr>
+				<tr>
+					<th colspan="2" rowspan="3" style="height:6em; background:#E2E4C0">altre forme</th>
+					<th colspan="2" style="background:#E2E4C0"><span title="infinito">infinito</span></th>
+					<th colspan="2" style="background:#E2E4C0"><span title="participio">participio</span></th>
+					<th colspan="2" style="background:#E2E4C0"><span title="gerundio">gerundio</span></th>
+				</tr>
+				<tr>
+					<th style="background:#E2E4C0; width:12.5%"><span title="presente">presente*</span></th>
+					<th style="background:#E2E4C0; width:12.5%"><span title="passato">passato</span></th>
+					<th style="background:#E2E4C0; width:12.5%"><span title="presente">presente*</span></th>
+					<th style="background:#E2E4C0; width:12.5%"><span title="passato">passato*</span></th>
+					<th style="background:#E2E4C0; width:12.5%"><span title="presente">presente</span></th>
+					<th style="background:#E2E4C0; width:12.5%"><span title="passato">passato</span></th>
+				</tr>
+				<tr>
+					<td>volere</td>
+					<td>avere voluto</td>
+					<td>volente</td>
+					<td>voluto</td>
+					<td>volendo</td>
+					<td>avendo voluto</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2 id="samples">Sample Texts</h2>
+
+		<!--Universal Declaration of Human Rights-->
+		<div class="row" id="UDHR">
+  			<div class="column">
+  				<h3>Article 1 of the Universal Declaration of Human Rights</h3>
+  				<p>All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.</p>
+  			</div>
+  			<div class="column">
+  				<h3>Articolo 1 della Dichiarazione universale dei diritti umani</h3>
+  				<p>Tutti gli esseri umani nascono liberi ed eguali in dignità e diritti. Essi sono dotati di ragione e di coscienza e devono agire gli uni verso gli altri in spirito di fratellanza.</p>
+  			</div>
+		</div>
+
+		<br>
+
+		<!--Nessun dorma-->
+		<div id="Nessun_dorma">
+			<div class="row">
+  				<div class="column">
+  					<h3><i>None shall sleep</i> by Giacomo Puccini</h3>
+  					<p>(None shall sleep! None shall sleep!)</p>
+  				</div>
+  				<div class="column">
+  					<h3><i>Nessun dorma</i> di Giacomo Puccini</h3>
+  					<p>(Nessun dorma! Nessun dorma!)</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>None shall sleep! None shall sleep!<br>
+					You too, O Princess,<br>
+					In your cold room,<br>
+					Watch the stars that tremble with love<br>
+					And with hope.</p>
+  				</div>
+  				<div class="column">
+  					<p>Nessun dorma! Nessun dorma!<br>
+					Tu pure, oh Principessa,<br>
+					Nella tua fredda stanza,<br>
+					Guardi le stelle che tremano d'amore<br>
+					E di speranza.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>But my secret is hidden within me,<br>
+					My name no one shall know...<br>
+					No, no! On your mouth I will say it,<br>
+					When the light shines.</p>
+  				</div>
+  				<div class="column">
+  					<p>Ma il mio mistero è chiuso in me,<br>
+					Il nome mio nessun saprà...<br>
+					No, no! sulla tua bocca lo dirò,<br>
+					Quando la luce splenderà.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>And my kiss will dissolve the silence<br>
+					That makes you mine!</p>
+  				</div>
+  				<div class="column">
+  					<p>Ed il mio bacio scioglierà il silenzio<br>
+					Che ti fa mia!</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>(Il nome suo nessun saprà,<br>
+					E noi dovrem, ahimè, morir, morir!)</p>
+  				</div>
+  				<div class="column">
+  					<p>(His name no one will know,<br>
+					And we shall, alas, die, die!)</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>Vanish, O night!<br>
+					Set, stars!<br>
+					Set, stars!<br>
+					At dawn, I will win!<br>
+					I will win!<br>
+					I will win!</p>
+  				</div>
+  				<div class="column">
+  					<p>Dilegua, oh notte!<br>
+					Tramontate, stelle!<br>
+					Tramontate, stelle!<br>
+					All'alba vincerò!<br>
+					Vincerò!<br>
+					Vincerò!</p>
+  				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<!--Coro di Zingari-->
+		<div id="Coro_di_Zingari">
+			<div class="row">
+  				<div class="column">
+  					<h3><i>Gypsy Chorus</i> by Giuseppe Verdi</h3>
+  					<p>[GYPSIES]<br>
+					See! The somber, nightly attire<br>
+					Strips away from the immense vault of the heavens;<br>
+					It seems like a widow who, at last, removes<br>
+					The brown garments with which she was enveloped.</p>
+  				</div>
+  				<div class="column">
+  					<h3><i>Coro di Zingari</i> di Giuseppe Verdi</h3>
+  					<p>[ZINGARI E ZINGARE]<br>
+					Vedi! Le fosche notturne spoglie<br>
+					De' cieli sveste l'immensa volta;<br>
+					Sembra una vedova che alfin si toglie<br>
+					I bruni panni ond'era involta</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>To work! To work!<br>
+					Give it, hammer it.</p>
+  				</div>
+  				<div class="column">
+  					<p>All'opra! all'opra!<br>
+					Dàgli, martella</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>Who beautifies the days of the gypsy?<br>
+					Who beautifies the days of the gypsy? Who?<br>
+					Who beautifies the days?<br>
+					Who beautifies the days of the gypsy?<br>
+					The gypsy girl!</p>
+  				</div>
+  				<div class="column">
+  					<p>Chi del gitano i giorni abbella?<br>
+					Chi del gitano i giorni abbella? Chi?<br>
+					Chi i giorni abbella?<br>
+					Chi del gitano i giorni abbella?<br>
+					La zingarella!</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>[MEN]<br>
+					Pour me a sip; it lends strength and courage<br>
+					To the body and the soul from drinking.</p>
+  				</div>
+  				<div class="column">
+  					<p>[UOMINI]<br>
+					Versami un tratto; lena e coraggio<br>
+					Il corpo e l'anima traggon dal bere</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>[ALL]<br>
+					Oh, look, look! A ray of sunlight<br>
+					Shines more vividly in my/your glass!<br>
+					To work, to work!</p>
+  				</div>
+  				<div class="column">
+  					<p>[TUTTI]<br>
+					Oh guarda, guarda! del sole un raggio<br>
+					Brilla più vivido nel mio/tuo bicchiere!<br>
+					All'opra, all'opra!</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>Who beautifies the days of the gypsy?<br>
+					Who beautifies the days of the gypsy? Who?<br>
+					Who beautifies the days?<br>
+					The gypsy girl!<br>
+					The gypsy girl!<br>
+					The gypsy girl!</p>
+  				</div>
+  				<div class="column">
+  					<p>Chi del gitano i giorni abbella?<br>
+					Chi del gitano i giorni abbella? Chi?<br>
+					Chi i giorni abbella?<br>
+					La zingarella!<br>
+					La zingarella!<br>
+					La zingarella!</p>
+  				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<!--The Moon Over Me-->
+		<div id="The_Moon_Over_Me">
+			<div class="row">
+  				<div class="column">
+  					<h3>Excerpt from <i>The Moon Over Me</i> by Melissa Tatsumoto-Lee</h3>
+  					<p>The climb up the cliffside was steep, but I persevered, zigzagging back and forth towards the top of the precipice. The wind blew across my neck and bit into my hands, but I kept walking, holding the urn close to my chest. The night was much colder than I expected, and my hoodie and sneakers did nothing to protect me from the frigid air. Each step was tiring, and, looking up, I could see I had so much left to climb.</p>
+  				</div>
+  				<div class="column">
+  					<h3>Estratto da <i>La luna sopra di me</i> di Melissa Tatsumoto-Lee</h3>
+  					<p>La salita sul fianco della scogliera era ripida, ma ho perseverato, zigzagando avanti e indietro verso la cima del precipizio. Il vento mi soffiava sul collo e mi mordeva le mani, ma continuavo a camminare, tenendo l'urna stretta al petto. La notte era molto più fredda di quanto mi aspettassi, e la felpa con cappuccio e le scarpe da ginnastica non facevano nulla per proteggermi dall'aria gelida. Ogni passo era faticoso e, guardando in alto, vedevo che mi restava ancora molto da scalare.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>I could feel myself getting higher, the air thinning with every step. I clutched the urn with my arms, warming it like a bird sitting on her eggs. I buried my head into my jacket, and a puff of air escaped into the air.</p>
+  				</div>
+  				<div class="column">
+  					<p>Mi sentivo sempre più in alto, l'aria si assottigliava a ogni passo. Strinsi l'urna con le braccia, riscaldandola come un uccello che si posa sulle sue uova. Ho seppellito la testa nella giacca e un soffio d'aria è sfuggito all'aria.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>I kept walking even though I could feel my legs aching and my heels hurting. I was nearing the summit, and I could see the edge only a few meters above me.</p>
+  				</div>
+  				<div class="column">
+  					<p>Continuai a camminare anche se sentivo le gambe doloranti e i talloni che mi facevano male. Mi stavo avvicinando alla cima e potevo vedere il bordo a pochi metri sopra di me.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>Then the trail ended.</p>
+  				</div>
+  				<div class="column">
+  					<p>Poi il sentiero finì.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>The trail dropped off back to where I started. I looked back up at the summit, so close yet so far. This was it. My hike of two hours in the freezing night ended here. I held up the urn. It was simplistic, a white urn with a smooth glazed surface. Two lines, one red and one black, ran around the urn, and I ran my finger along the lines. On the bottom of the urn, the symbol for tsuchi, the ground, was carved and filled with black lacquer. The symbol for ame, the sky, sat on the lid, carved and filled with gold lacquer.</p>
+  				</div>
+  				<div class="column">
+  					<p>Il sentiero scendeva al punto di partenza. Guardai di nuovo la cima, così vicina eppure così lontana. Era questo il momento. La mia escursione di due ore nella notte gelida finiva qui. Ho preso in mano l'urna. Era semplicistica, un'urna bianca con una superficie liscia e smaltata. Due linee, una rossa e una nera, correvano intorno all'urna e io le percorrevo con il dito. Sul fondo dell'urna, il simbolo dello tsuchi, la terra, era intagliato e riempito di lacca nera. Il simbolo di ame, il cielo, si trovava sul coperchio, intagliato e riempito di lacca dorata.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>Looking at the urn, I was reminded of why I was here, why I had to get to the top. I turned away from the missing path and towards the rock wall before me. I grabbed a jutting rock and began to climb. I pressed my body against the cliff and kept my eyes upward. Inch by inch, I crawled up the cliff like a worm, hugging the precipice. I could feel my fingers digging into the urn, and my grip on the urn was as strong as my grip on the wall. Nearing the top, I lifted the urn and pushed it over the cliff. Clinging to the rocks, I scrambled up with the last of my strength. My hands were riddled with blisters, my arms and legs were sore, and my eyes were burned by the rock dust that blew up from the floor. I picked up the urn from the ground and laid down.</p>
+  				</div>
+  				<div class="column">
+  					<p>Guardando l'urna, mi venne in mente perché ero qui, perché dovevo arrivare in cima. Mi allontanai dal sentiero mancante e mi diressi verso la parete di roccia davanti a me. Afferrai una roccia sporgente e cominciai ad arrampicarmi. Premetti il mio corpo contro la parete e tenni lo sguardo rivolto verso l'alto. Centimetro dopo centimetro, strisciai sulla parete come un verme, abbracciando il precipizio. Sentivo le dita che scavavano nell'urna e la mia presa sull'urna era forte quanto quella sulla parete. In prossimità della cima, sollevai l'urna e la spinsi oltre il precipizio. Aggrappandomi alle rocce, mi arrampicai con le ultime forze. Avevo le mani piene di vesciche, le braccia e le gambe doloranti e gli occhi bruciati dalla polvere di roccia che si sollevava dal pavimento. Raccolsi l'urna da terra e mi sdraiai.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>The stars sparkled and shifted, piercing the dark ink of the night sky with their radiance. The trees swayed, shivering as the cold winds blew through their leaves. There was peace on this cliff. Tranquility. Clarity.</p>
+  				</div>
+  				<div class="column">
+  					<p>Le stelle scintillavano e si muovevano, perforando con il loro splendore l'inchiostro scuro del cielo notturno. Gli alberi ondeggiavano, rabbrividendo quando il vento freddo soffiava tra le loro foglie. C'era pace su questa scogliera. Tranquillità. Chiarezza.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>I stood. And for the first time in my long journey, I turned around. I was invited by the city lights. The city glistened like golden jewelry, and the white light of the stars mingled with the yellow glow of the city. I could see the other mountains to the north, east, and west, fencing the city in its own little valley.</p>
+  				</div>
+  				<div class="column">
+  					<p>Mi sono alzato. E per la prima volta nel mio lungo viaggio, mi sono voltato. Mi invitarono le luci della città. La città brillava come un gioiello d'oro e la luce bianca delle stelle si mescolava al bagliore giallo della città. Potevo vedere le altre montagne a nord, a est e a ovest, che racchiudevano la città nella sua piccola valle.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>The world tilts on its axis.</p>
+  				</div>
+  				<div class="column">
+  					<p>Il mondo si inclina sul suo asse.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>It feels like your sitting next to me. There's warmth here, upon the Albine Peaks. Maybe I'll find it someday. With you.</p>
+  				</div>
+  				<div class="column">
+  					<p>Sembra che tu sia seduto accanto a me. C'è calore qui, sulle Cime Albine. Forse un giorno lo troverò. Con te.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>"Goodbye," I say, unscrewing the lid to the urn. I let you go, and you shower the earth below. Then, I bury the urn. I can't bear to break it or take it with.</p>
+  				</div>
+  				<div class="column">
+  					<p>"Addio", dico, svitando il coperchio dell'urna. Ti ho lasciato andare e tu hai bagnato la terra sottostante. Poi seppellisco l'urna, terra contro terra, cielo contro cielo. Non posso sopportare di romperla o di portarla con me.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>I sit with you for a while. Then, I climb back down.</p>
+  				</div>
+  				<div class="column">
+  					<p>Mi siedo con te per un po'. Poi mi arrampico di nuovo giù.</p>
+  				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<!--The Hobbit-->
+		<div id="The_Hobbit">
+			<div class="row">
+  				<div class="column">
+  					<h3>Excerpt from <i>The Hobbit</i> by J.R.R. Tolkein</h3>
+  					<h4>Chapter 5: Riddles in the Dark</h4>
+  					<p>When Bilbo opened his eyes, he wondered if he had; for it was just as dark as with them shut. No one was anywhere near him. Just imagine his fright! He could hear nothing, see nothing, and he could feel nothing except the stone of the floor.</p>
+  				</div>
+  				<div class="column">
+  					<h3>Estratto da <i>Lo Hobbit</i> di J.R.R. Tolkein</h3>
+  					<h4>Capitolo 5: Indovinelli nell'oscurità</h4>
+  					<p>Quando Bilbo aprì gli occhi, si domandò se li avesse davvero aperti; infatti, il buio non era meno fitto di quando li teneva chiusi. Non c'era nessuno vicino a lui. Immaginate che paura! Non poteva udire niente, vedere niente e sentire niente tranne il suolo roccioso.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>Very slowly he got up and groped about on all fours, till he touched the wall of the tunnel; but neither up nor down it could he find anything: nothing at all, no sign of goblins, no sign of dwarves. His head was swimming, and he was far from certain even of the direction they had been going in when he had his fall. He guessed as well as he could, and crawled along for a good way, till suddenly his hand met what felt like a tiny ring of cold metal lying on the floor of the tunnel. It was a turning point in his career, but he did not know it. He put the ring in his pocket almost without thinking; certainly it did not seem of any particular use at the moment. He did not go much further, but sat down on the cold floor and gave himself up to complete miserableness, for a long while. He thought of himself frying bacon and eggs in his own kitchen at home—for he could feel inside that it was high time for some meal or other; but that only made him miserabler.</p>
+  				</div>
+  				<div class="column">
+  					<p>Molto lentamente si mise carponi e andò attorno barcollando, finché toccò la parete della galleria; ma non poté scoprire niente né sopra niente di niente, nessuna traccia degli orchi, nessuna traccia dei nani. La testa gli girava ed era ben lontano dal sapere con un minimo di sicurezza in quale direzione stessero andando quando era caduto. Tirò a indovinare e avanzò strisciando per un po', finché improvvisamente la mano andò a sfiorare per caso qualcosa che al tatto sembrava un sottile anello di metallo freddo, adagiato sul fondo della galleria. Bilbo era a un punto cruciale della sua vita, ma non lo sapeva. Si mise in tasca l'anello quasi senza pensarci, in quel momento sembrava che non potesse servire a niente di particolare. Non andò molto avanti, ma si sedette sul pavimento freddo abbandonandosi al più completo sconforto. Pensò al Bilbo che friggeva uova e pancetta nella sua bella cucina a casa, perché poteva sentire dentro di sé che era ampiamente ora di mangiare qualcosa; ma questo lo rese soltanto più infelice.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>He could not think what to do; nor could he think what had happened; or why he had been left behind; or why, if he had been left behind, the goblins had not caught him; or even why his head was so sore.</p>
+  				</div>
+  				<div class="column">
+  					<p>Non riusciva a pensare al da farsi; né tanto meno era in grado di pensare a quanto era successo; o perché fosse stato abbandonato; o perché, se era stato abbandonato, gli orchi non l'avessero catturato; e nemmeno perché la testa gli facesse tanto male.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>The truth was he had been lying quiet, out of sight and out of mind, in a very dark corner for a long while. </p>
+  				</div>
+  				<div class="column">
+  					<p>La verità è che era rimasto a lungo steso per terra immobile, in un angolo buio, invisibile e svenuto.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>After some time he felt for his pipe. It was not broken, and that was something. Then he felt for his pouch, and there was some tobacco in it, and that was something more. Then he felt for matches and he could not find any at all, and that shattered his hopes completely. Just as well for him, as he agreed when he came to his senses. Goodness knows what the striking of matches and the smell of tobacco would have brought on him out of dark holes in that horrible place. Still at the moment he felt very crushed. But in slapping all his pockets and feeling all round himself for matches his hand came on the hilt of his little sword—the little dagger that he got from the trolls, and that he had quite forgotten; nor fortunately had the goblins noticed it, as he wore it inside his breeches.</p>
+  				</div>
+  				<div class="column">
+  					<p>Dopo un po', cercò a tastoni la pipa. Non si era rotta è questa era una bella cosa. Poi cercò la borsa dell'erba-pipa e ce n'era ancora un po', e questa era una cosa ancor più bella. Poi cercò dei fiammiferi, ma non riuscì a trovarne neanche uno e ciò infranse completamente le sue speranze. Meglio così, avrebbe riconosciuto una volta ripresi del tutto i sensi: solo il cielo sapeva cosa la fiammella dei fiammiferi e l'odore dell'erba-pipa gli avrebbero tirato addosso dai buchi neri di cui quel postaccio era pieno. In quel momento, tuttavia, si sentì distrutto. Ma nel buttare all'aria le tasche e nel tastarsi tutto cercando i fiammiferi, la mano gli era capitata sull'elsa della piccola spada, il pugnale che aveva preso ai troll di cui si era quasi dimenticato; per fortuna, gli orchi non se n'erano accorti, perché la portava sotto le brache.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>Now he drew it out. It shone pale and dim before his eyes. “So it is an elvish blade, too,” he thought; “and goblins are not very near, and yet not far enough.”</p>
+  				</div>
+  				<div class="column">
+  					<p>La sguainò, facendola luccicare fiocamente davanti ai suoi occhi. 'Dunque, anche questa è una lama elfica,' pensò, 'e gli orchi non sono molto vicini, anche se non sono lontani abbastanza.'</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>But somehow he was comforted. It was rather splendid to be wearing a blade made in Gondolin for the goblin-wars of which so many songs had sung; and also he had noticed that such weapons made a great impression on goblins that came upon them suddenly.</p>
+  				</div>
+  				<div class="column">
+  					<p>Ma si era un po' rincuorato. Cingere una lama forgiata a Gondolin per le guerre contro gli orchi, di cui tante canzoni avevano cantato, era una cosa che dava prestigio; ed egli si era anche accorto che quel tipo di armi aveva fatto una grande impressione agli orchi che erano improvvisamente piombati su di loro.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>“Go back?” he thought. “No good at all! Go sideways? Impossible! Go forward? Only thing to do! On we go!” So up he got, and trotted along with his little sword held in front of him and one hand feeling the wall, and his heart all of a patter and a pitter.</p>
+  				</div>
+  				<div class="column">
+  					<p>'Tornare indietro?' pensò. 'Neanche per sogno! Andare di lato? Impossibile! Andare avanti? È la sola cosa da fare! Dunque, in marcia!' Così si alzò e trotterellò via con la piccola spada sguainata davanti a sé, con una mano tastando la parete e con il cuore che era tutto un tambureggiare.</p>
+  				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<!--Eye Sea-->
+		<div id="Eye_Sea">
+			<div class="row">
+  				<div class="column">
+  					<h3><i>Eye Sea</i> by James C. Winthrop</h3>
+  					<p>In the night, the good eye's grace,<br>
+					Watches o'er with a loving face.<br>
+					Guardian of dreams, protector's might,<br>
+					Guiding souls through the dark night.</p>
+  				</div>
+  				<div class="column">
+  					<h3><i>Mare degli occhi</i> di James C. Winthrop</h3>
+  					<p>Nella notte, la grazia dell'occhio buono,<br>
+					veglia su di noi con un volto amorevole.<br>
+					Guardiano dei sogni, forza protettrice,<br>
+					guida le anime attraverso la notte oscura.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>But the evil eye, a sinister leer,<br>
+					Curses hearts, breeds despair and fear.<br>
+					Leading astray with wicked charms,<br>
+					Innocence falls into its harmful arms.</p>
+  				</div>
+  				<div class="column">
+  					<p>Ma l'occhio maligno, con sguardo sinistro,<br>
+					maledice i cuori, genera disperazione e paura.<br>
+					Con il suo fascino malvagio, trae in inganno <br>le anime,
+					l'innocenza cade nelle sue braccia dannose.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>The observing eye, impartial and wise,<br>
+					Sees the truth in unbiased guise.<br>
+					No judgment passed, no shadows cast,<br>
+					Only reality, revealed at last.</p>
+  				</div>
+  				<div class="column">
+  					<p>L'occhio osservatore, imparziale e saggio,<br>
+					vede la verità in una veste imparziale.<br>
+					Nessun giudizio, nessuna ombra,<br>
+					Solo la realtà, finalmente rivelata.</p>
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+  					<p>Hand eye, creator, destroyer, supreme,<br>
+					Weaver of fate in a cosmic dream.<br>
+					Benevolent blessings or malevolent strife,<br>
+					Shaping our world with the touch of life.</p>
+  				</div>
+  				<div class="column">
+  					<p>L'occhio della mano, creatore, distruttore, supremo,<br>
+					Tessitore del destino in un sogno cosmico.<br>
+					Benedizioni benevole o lotte malevole,<br>
+					plasmando il nostro mondo con il tocco della vita.</p>
+  				</div>
+			</div>
+		</div>
+
 		<script>
 			// Get the button:
 			let mybutton = document.getElementById("myBtn");
@@ -1303,6 +2003,8 @@
 		</script>
 	</body>
 </html>
+
+
 
 
 
