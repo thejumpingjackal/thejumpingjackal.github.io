@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirect Page</title>
+<script>
+    // Function to start the countdown and redirect after 5 seconds
+    function startCountdown() {
+        var seconds = 5;
+        var countdownElement = document.getElementById("countdown");
+
+        var countdownInterval = setInterval(function() {
+            seconds--;
+            countdownElement.textContent = seconds;
+
+            if (seconds <= 0) {
+                clearInterval(countdownInterval);
+                window.location.href = "Senior Project Proposal - Edward Wang.pdf"; // Redirect to destination page
+            }
+        }, 1000);
+    }
+</script>
+</head>
+<body onload="startCountdown()">
+    <p>Redirecting in <span id="countdown">5</span> seconds...</p>
+    <p>If you are not redirected automatically, you can <a href="Senior Project Proposal - Edward Wang.pdf">click here</a>.</p>
+</body>
+</html>
