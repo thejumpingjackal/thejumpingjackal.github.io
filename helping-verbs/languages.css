@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'Miip Bokori';
+    src: url('fonts/Miip Bokori.ttf') format('truetype')
+}
+
 html, body {
 	font-family: sans-serif;
+}
+
+.meap {
+    font-family: 'Miip Bokori', sans-serif;
 }
 
 td {
