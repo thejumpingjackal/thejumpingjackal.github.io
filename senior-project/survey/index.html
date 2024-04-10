@@ -18,9 +18,23 @@
     			max-width: 60%;
 			}
 
+    		th, td {
+    			text-align:center;
+    			width: 50px;
+    		}
+
+    		.audiotable {
+    			padding: 0px 20px;
+    		}
+
 			@media (max-width: 665px) {
     			body {
-    		    	max-width: 100%; /* When viewport width is less than or equal to 450px, set body width to 100% */
+    		    	max-width: 100%;
+    		    	padding: 0px;
+    			}
+
+    			.audiotable {
+    				padding: 0px;
     			}
 			}
 
@@ -28,17 +42,8 @@
     			padding-left: 20px;
     		}
 
-    		th, td {
-    			text-align:center;
-    			width: 50px;
-    		}
-
     		.optionmarker {
     			width: 80px;
-    		}
-
-    		.audiotable {
-    			padding: 0px 20px;
     		}
     		
     		.required_question {
