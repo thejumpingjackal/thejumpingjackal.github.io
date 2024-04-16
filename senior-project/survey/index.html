@@ -88,6 +88,14 @@
 			.button:hover {
   				background-color: #774ac7;
 			}
+
+			.ai_belief_questions {
+				width: 10%;
+			}
+
+			.not_sure {
+				border-left: thin solid lightgray;
+			}
     	</style>
     	<script src="form-generate.js"></script>
 	</head>
@@ -145,7 +153,28 @@
     	        <option value="rnb_soul">R&B & Soul</option>
     	        <option value="rock">Rock</option>
     	        <option value="other">Other</option>
-    	    </select>
+    	    </select><br><br>
+
+    	    <label for="ai_belief">Do you believe that AI music would sound better or worse than a composition made by humans? <span class="required_question">*</span></label><br><br>
+
+    	    <table>
+    			<tr>
+      				<th class="ai_belief_questions">Much Worse</th>
+      				<th class="ai_belief_questions">Slightly Worse</th>
+      				<th class="ai_belief_questions">No Difference</th>
+      				<th class="ai_belief_questions">Slightly Better</th>
+      				<th class="ai_belief_questions">Much Better</th>
+      				<th class="ai_belief_questions not_sure">Not sure</th>
+    			</tr>
+    			<tr>
+      				<td><input type="radio" name="ai_belief" value="much_worse" required></td>
+      				<td><input type="radio" name="ai_belief" value="slightly_worse" required></td>
+      				<td><input type="radio" name="ai_belief" value="no_difference" required></td>
+      				<td><input type="radio" name="ai_belief" value="slightly_better" required></td>
+      				<td><input type="radio" name="ai_belief" value="much_better" required></td>
+      				<td class="not_sure"><input type="radio" name="ai_belief" value="not_sure" required></td>
+    			</tr>
+    		</table>
 
     	    <br><br><br>
 
