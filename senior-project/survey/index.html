@@ -54,6 +54,16 @@
     			height: 257px;
     		}
 
+    		#mobileMessage {
+    			display: none;
+    		}
+
+    		@media only screen and (max-width: 768px) {
+    			#mobileMessage {
+        			display: block;
+    			}
+			}
+
     		kbd {
 				background-color: #eee;
 				border-radius: 3px;
@@ -107,6 +117,10 @@
     	<p><b>Please make sure to read ALL instructions. The survey should take around 15-20 minutes. If you have any trouble navigating the survey, feel free to contact me at <a href="mailto:edwardanwang+spsvy@gmail.com">edwardanwang+spsvy@gmail.com</a>. The form will close at 11:59 PM on May 1st. Thank you again for your participation!</b></p>
 
     	<p><strong>Purpose:</strong> This survey aims to test how well the average person is able to distinguish between AI-generated compositions and manmade compositions as well as if musical experience is able to facilitate this distinction. It also aims to see if there is any emotional disparity between the music created by AI and the music created by a human.</p>
+
+    	<div id="mobileMessage">
+    		<p><b>You are seeing this message because you are using a mobile device. Although this survey does have the capability to be taken on a mobile phone, it can also throw errors unexpectedly. If you continue to experience errors, please try taking this survey on a desktop computer rather than a mobile phone. If you continue to run into trouble, always feel free to contact me at <a href="mailto:edwardanwang+spsvy@gmail.com">edwardanwang+spsvy@gmail.com</a>.</b></p>
+		</div>
 
     	<p><span class="required_question">* indicates required question</span></p>
 
