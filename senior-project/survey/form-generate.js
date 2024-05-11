@@ -1,1 +1,210 @@
-const _0x23b94f=_0x4183;(function(_0x5aa478,_0x58f436){const _0x42f934=_0x4183,_0x4faa7c=_0x5aa478();while(!![]){try{const _0x3f4b3d=-parseInt(_0x42f934(0x1d0))/0x1*(parseInt(_0x42f934(0x1b3))/0x2)+-parseInt(_0x42f934(0x1c1))/0x3*(parseInt(_0x42f934(0x1f9))/0x4)+-parseInt(_0x42f934(0x1ca))/0x5*(parseInt(_0x42f934(0x1e6))/0x6)+-parseInt(_0x42f934(0x1c6))/0x7*(-parseInt(_0x42f934(0x1ed))/0x8)+-parseInt(_0x42f934(0x1b5))/0x9*(-parseInt(_0x42f934(0x1e4))/0xa)+parseInt(_0x42f934(0x1d9))/0xb+parseInt(_0x42f934(0x1c4))/0xc*(parseInt(_0x42f934(0x1c5))/0xd);if(_0x3f4b3d===_0x58f436)break;else _0x4faa7c['push'](_0x4faa7c['shift']());}catch(_0x5e410f){_0x4faa7c['push'](_0x4faa7c['shift']());}}}(_0x7da5,0xd94ef));function _0x7da5(){const _0xb26653=['\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09<label\x20for=\x22q','2nzbX3AjdGB5C0WM','</b></label><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09<audio\x20controls>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09\x20\x20\x20\x20<source\x20src=\x22./actual/q','test','_happy\x22><b>Happiness\x20Rating:</b>\x20For\x20each\x20of\x20the\x20audio\x20clips,\x20rank\x20on\x20a\x20scale\x20of\x201\x20to\x205\x20how\x20happy\x20the\x20music\x20made\x20you\x20feel.\x20(1\x20=\x20music\x20did\x20not\x20make\x20you\x20happy\x20at\x20all,\x205\x20=\x20music\x20made\x20you\x20extremely\x20happy)\x20<span\x20class=\x22required_question\x22>*</span></label>\x0a\x0a\x09<br><br>\x0a\x0a\x20\x20\x20\x20<table>\x0a\x20\x20\x20\x20\x09<tr>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<th\x20class=\x22optionmarker\x22></th>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<th>😐<br>1</th>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<th>🙂<br>2</th>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<th>😀<br>3</th>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<th>😁<br>4</th>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<th>😆<br>5</th>\x0a\x20\x20\x20\x20\x09\x09</tr>\x0a\x20\x20\x20\x20\x09\x09<tr>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<td\x20class=\x22optionmarker\x22><b>Main</b></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','ljOloe1ZzvYN8XR1','none','yXZ8dwN8v5ZrAcGN','M5n0n93cx92AvjGf','floor','760bOdFQz','\x22\x20value=\x222\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','12TrtghR','happy0\x22\x20value=\x223\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','R3rXasJscxJEVt05','KtEYVjWoS9Okdl7a','getElementById','sad0\x22\x20value=\x221\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','XX9UXrgll6qxmcjw','3414896vQHXTp','style','uRSlrRJPIlokDiDa','happy0\x22\x20value=\x224\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','/ogseed.wav\x22\x20controls=\x22controls\x22>Your\x20browser\x20does\x20not\x20support\x20the\x20audio\x20element.</audio>\x0a\x09\x09\x09\x09\x09\x09</td>\x0a\x09\x09\x09\x09\x09</tr>\x0a\x09\x09\x09\x09</tbody>\x0a\x09\x09\x09</table>\x0a\x0a\x09\x09<br>\x0a\x0a\x09\x09<label\x20for=\x22q','_identify\x22><b>Identify:</b>\x20Which\x20ending\x20to\x20the\x20main\x20audio\x20clip\x20do\x20you\x20believe\x20was\x20written\x20by\x20AI?\x20<span\x20class=\x22required_question\x22>*</span></label><br><br>\x0a\x0a\x09\x09<div\x20id=\x22q','rHOwwOLhMuwocLu4','length','-options-container\x22>','h82hFNIVSncfnnmY','XsigdzBwLgEpFM7H','r6kpZDdA3oLPVgbN','16464oAHffF','W8WTxxgwSHvunTux','sad0\x22\x20value=\x224\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','happy','\x22\x20value=\x223\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','5TbICDffeC3eeur8','sad0\x22\x20value=\x222\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','question_order','0qVwYYTYfvDV6gPd','\x0a\x09\x09<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09<input\x20type=\x22radio\x22\x20id=\x22q','userAgent','happy0\x22\x20value=\x222\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','gnLF4xhnwpxeMf73','1436hXsEju','happy0\x22\x20value=\x225\x22\x20required></td>\x0a\x20\x20\x20\x20\x09\x09</tr>','42111TCUGWB','zq1lwfarNiBGzRc1','sad0\x22\x20value=\x223\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','7KLcWHwfL8BbQP8w','</h2>\x0a\x09\x09\x09<table>\x0a\x09\x09\x09\x09<tbody>\x0a\x09\x09\x09\x09\x09<tr>\x0a\x09\x09\x09\x09\x09\x09<td\x20class=\x22audiotable\x22><b>Main\x20Audio\x20Clip</b></td>\x0a\x09\x09\x09\x09\x09\x09<td>\x0a\x09\x09\x09\x09\x09\x09\x09<audio\x20src=\x22./actual/q','mgMRUiDaYjhkNcGR','sad','64QflTp9wPA8seES','_sad\x22><b>Sadness\x20Rating:</b>\x20For\x20each\x20of\x20the\x20audio\x20clips,\x20rank\x20on\x20a\x20scale\x20of\x201\x20to\x205\x20how\x20sad\x20the\x20music\x20made\x20you\x20feel.\x20(1\x20=\x20music\x20did\x20not\x20make\x20you\x20sad\x20at\x20all,\x205\x20=\x20music\x20made\x20you\x20extremely\x20sad)\x20<span\x20class=\x22required_question\x22>*</span></label><br><br>\x0a\x0a\x20\x20\x20\x20<table>\x0a\x20\x20\x20\x20\x09<tr>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<th\x20class=\x22optionmarker\x22></th>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<th>😐<br>1</th>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<th>☹️<br>2</th>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<th>😞<br>3</th>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<th>😖<br>4</th>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<th>😭<br>5</th>\x0a\x20\x20\x20\x20\x09</tr>\x0a\x20\x20\x20\x20\x09<tr>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td\x20class=\x22optionmarker\x22><b>Main</b></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','main-form','happy0\x22\x20value=\x221\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','block','69IHNOQT','2yad4QuqOR3gxhBa','\x22><b>Ending\x20','190752quVOHT','39uzSuTp','21VhEzNo','\x0a\x09\x09<tr>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td\x20class=\x22optionmarker\x22><b>Ending\x20','\x0a\x09\x09</table>\x0a\x20\x20\x20\x20</div>','joOXWDeDtxMNT33X','663305cCeCQK','\x0a\x09<br>\x0a\x0a\x09<label\x20for=\x22q','value','pyt0Ug27uBSGVTKD','.wav\x22\x20type=\x22audio/mpeg\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09\x20\x20\x20\x20Your\x20browser\x20does\x20not\x20support\x20the\x20audio\x20element.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09</audio><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>','toString','1318OiDgEq','sad0\x22\x20value=\x225\x22\x20required></td>\x0a\x20\x20\x20\x20\x09</tr>','HpACoEt8TRlz1wB4','</table>','TnA3xRyxRuy8BeT6','display','</b></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q','n9Qdpqbwif9T5j4W','<br>','5637841PqhvEd'];_0x7da5=function(){return _0xb26653;};return _0x7da5();}const key=[[_0x23b94f(0x1e9),_0x23b94f(0x1f7),_0x23b94f(0x1f6)],[_0x23b94f(0x1db),_0x23b94f(0x1ab),_0x23b94f(0x1d2)],[_0x23b94f(0x1fa),_0x23b94f(0x1ae),_0x23b94f(0x1ba)],[_0x23b94f(0x1e1),_0x23b94f(0x1e8),_0x23b94f(0x1ec)],[_0x23b94f(0x1d4),_0x23b94f(0x1df),'k2EUJfJCZ2rYe3Go'],[_0x23b94f(0x1cd),_0x23b94f(0x1b6),_0x23b94f(0x1f3)],['HwUKkEPEsranbFCC',_0x23b94f(0x1e2),_0x23b94f(0x1bc)],[_0x23b94f(0x1d7),_0x23b94f(0x1b8),_0x23b94f(0x1c9)],[_0x23b94f(0x1c2),'hOtsfwXOPgqg6P85',_0x23b94f(0x1f8)],[_0x23b94f(0x1ef),'q29F4ABdz4ArInEq',_0x23b94f(0x1b2)]];window['onload']=function(){const _0x45d7a6=_0x23b94f;var _0x38697e=document[_0x45d7a6(0x1ea)]('mobileMessage'),_0x56d510=/iPhone|iPad|iPod|Android/i[_0x45d7a6(0x1dd)](navigator[_0x45d7a6(0x1b0)]);_0x56d510?_0x38697e[_0x45d7a6(0x1ee)][_0x45d7a6(0x1d5)]=_0x45d7a6(0x1c0):_0x38697e[_0x45d7a6(0x1ee)][_0x45d7a6(0x1d5)]=_0x45d7a6(0x1e0);const _0x333f6a=generateQuestionOrder(),_0x46ca33=document[_0x45d7a6(0x1ea)](_0x45d7a6(0x1ad));_0x46ca33[_0x45d7a6(0x1cc)]=_0x333f6a[_0x45d7a6(0x1cf)](),displayForm(_0x333f6a);};function shuffleArray(_0x28f401){const _0x1a3bdc=_0x23b94f;for(let _0x1aec24=_0x28f401[_0x1a3bdc(0x1f4)]-0x1;_0x1aec24>0x0;_0x1aec24--){const _0x410890=Math[_0x1a3bdc(0x1e3)](Math['random']()*(_0x1aec24+0x1));[_0x28f401[_0x1aec24],_0x28f401[_0x410890]]=[_0x28f401[_0x410890],_0x28f401[_0x1aec24]];}return _0x28f401;}function generateQuestionOrder(){var _0x44d8a6=[];for(let _0x3379eb=0x1;_0x3379eb<=0xa;_0x3379eb++){var _0x350395=[0x1,0x2,0x3];for(let _0x505bef=0x0;_0x505bef<0xa;_0x505bef++){_0x350395=shuffleArray(_0x350395);}_0x44d8a6['push']([_0x3379eb]['concat'](_0x350395));}for(let _0x3b9dc1=0x0;_0x3b9dc1<0xa;_0x3b9dc1++){_0x44d8a6=shuffleArray(_0x44d8a6);}return _0x44d8a6;}function generateQuestion(_0x43dd7a,_0x2be295){const _0x404b43=_0x23b94f,_0x4262a3=['A','B','C'],_0xf994ec=_0x2be295[0x0];var _0x165a12='\x0a\x20\x20\x20\x20<div>\x0a\x09\x09<h2>Question\x20'+_0x43dd7a+_0x404b43(0x1b9)+_0xf994ec+_0x404b43(0x1f1)+_0xf994ec+_0x404b43(0x1f2)+_0xf994ec+_0x404b43(0x1f5);for(let _0xbc610c=0x1;_0xbc610c<=0x3;_0xbc610c++){let _0x12007f=_0x2be295[_0xbc610c];_0x165a12+=_0x404b43(0x1af)+_0xf994ec+'o'+_0x12007f+'\x22\x20name=\x22q'+_0xf994ec+'\x22\x20value=\x22'+_0x12007f+_0x404b43(0x1da)+_0xf994ec+'o'+_0x12007f+_0x404b43(0x1c3)+_0x4262a3[_0xbc610c-0x1]+_0x404b43(0x1dc)+_0xf994ec+'/'+key[_0xf994ec-0x1][_0x12007f-0x1]+_0x404b43(0x1ce);}_0x165a12+=_0x404b43(0x1cb)+_0xf994ec+_0x404b43(0x1de)+_0xf994ec+_0x404b43(0x1bf)+_0xf994ec+_0x404b43(0x1b1)+_0xf994ec+_0x404b43(0x1e7)+_0xf994ec+_0x404b43(0x1f0)+_0xf994ec+_0x404b43(0x1b4);for(let _0x49940f=0x1;_0x49940f<=0x3;_0x49940f++){_0x165a12+='\x0a\x09\x09<tr>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td\x20class=\x22optionmarker\x22><b>Ending\x20'+_0x4262a3[_0x49940f-0x1]+_0x404b43(0x1d6)+_0xf994ec+'happy'+_0x2be295[_0x49940f]+'\x22\x20value=\x221\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q'+_0xf994ec+_0x404b43(0x1fc)+_0x2be295[_0x49940f]+_0x404b43(0x1e5)+_0xf994ec+_0x404b43(0x1fc)+_0x2be295[_0x49940f]+'\x22\x20value=\x223\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q'+_0xf994ec+_0x404b43(0x1fc)+_0x2be295[_0x49940f]+'\x22\x20value=\x224\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q'+_0xf994ec+_0x404b43(0x1fc)+_0x2be295[_0x49940f]+'\x22\x20value=\x225\x22\x20required></td>\x0a\x20\x20\x20\x20\x09</tr>';}_0x165a12+=_0x404b43(0x1d3),_0x165a12+=_0x404b43(0x1cb)+_0xf994ec+_0x404b43(0x1bd)+_0xf994ec+_0x404b43(0x1eb)+_0xf994ec+_0x404b43(0x1ac)+_0xf994ec+_0x404b43(0x1b7)+_0xf994ec+_0x404b43(0x1fb)+_0xf994ec+_0x404b43(0x1d1);for(let _0x464a71=0x1;_0x464a71<=0x3;_0x464a71++){_0x165a12+=_0x404b43(0x1c7)+_0x4262a3[_0x464a71-0x1]+_0x404b43(0x1d6)+_0xf994ec+_0x404b43(0x1bb)+_0x2be295[_0x464a71]+'\x22\x20value=\x221\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q'+_0xf994ec+'sad'+_0x2be295[_0x464a71]+_0x404b43(0x1e5)+_0xf994ec+'sad'+_0x2be295[_0x464a71]+_0x404b43(0x1fd)+_0xf994ec+_0x404b43(0x1bb)+_0x2be295[_0x464a71]+'\x22\x20value=\x224\x22\x20required></td>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<td><input\x20type=\x22radio\x22\x20name=\x22q'+_0xf994ec+_0x404b43(0x1bb)+_0x2be295[_0x464a71]+'\x22\x20value=\x225\x22\x20required></td>\x0a\x20\x20\x20\x20\x09</tr>';}return _0x165a12+=_0x404b43(0x1c8),_0x165a12;}function _0x4183(_0x31e718,_0x13fe63){const _0x7da525=_0x7da5();return _0x4183=function(_0x4183a9,_0xc3356){_0x4183a9=_0x4183a9-0x1ab;let _0x2fc39b=_0x7da525[_0x4183a9];return _0x2fc39b;},_0x4183(_0x31e718,_0x13fe63);}function generateForm(_0x8eb551){const _0x189cf5=_0x23b94f;let _0x19e9b6='';for(let _0x18a423=0x0;_0x18a423<0xa;_0x18a423++){_0x19e9b6+=generateQuestion(_0x18a423+0x1,_0x8eb551[_0x18a423]),_0x19e9b6+=_0x189cf5(0x1d8);}return _0x19e9b6;}function displayForm(_0x5b56f2){const _0x231c80=_0x23b94f;var _0x82d68=document[_0x231c80(0x1ea)](_0x231c80(0x1be)),_0x4eee3d=generateForm(_0x5b56f2),_0x6dcdd0=_0x82d68['nextElementSibling'];_0x6dcdd0['innerHTML']=_0x4eee3d;}
+/*
+const key = [
+	["KtEYVjWoS9Okdl7a", "XsigdzBwLgEpFM7H", "h82hFNIVSncfnnmY"],
+	["2nzbX3AjdGB5C0WM", "5TbICDffeC3eeur8", "HpACoEt8TRlz1wB4"],
+	["W8WTxxgwSHvunTux", "0qVwYYTYfvDV6gPd", "mgMRUiDaYjhkNcGR"],
+	["yXZ8dwN8v5ZrAcGN", "R3rXasJscxJEVt05", "XX9UXrgll6qxmcjw"],
+	["TnA3xRyxRuy8BeT6", "ljOloe1ZzvYN8XR1", "k2EUJfJCZ2rYe3Go"],
+	["pyt0Ug27uBSGVTKD", "zq1lwfarNiBGzRc1", "rHOwwOLhMuwocLu4"],
+	["HwUKkEPEsranbFCC", "M5n0n93cx92AvjGf", "64QflTp9wPA8seES"],
+	["n9Qdpqbwif9T5j4W", "7KLcWHwfL8BbQP8w", "joOXWDeDtxMNT33X"],
+	["2yad4QuqOR3gxhBa", "hOtsfwXOPgqg6P85", "r6kpZDdA3oLPVgbN"],
+	["uRSlrRJPIlokDiDa", "q29F4ABdz4ArInEq", "gnLF4xhnwpxeMf73"]
+];
+*/
+
+const key = [
+	["ogend", "aiend", "myend"],
+	["ogend", "aiend", "myend"],
+	["ogend", "aiend", "myend"],
+	["ogend", "aiend", "myend"],
+	["ogend", "aiend", "myend"],
+	["ogend", "aiend", "myend"],
+	["ogend", "aiend", "myend"],
+	["ogend", "aiend", "myend"],
+	["ogend", "aiend", "myend"],
+	["ogend", "aiend", "myend"]
+];
+
+window.onload = function() {
+	var mobileMessage = document.getElementById('mobileMessage');
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        
+    if (isMobile) {
+        mobileMessage.style.display = 'block';
+    } else {
+        mobileMessage.style.display = 'none';
+    }
+
+   	const questionOrder = generateQuestionOrder();
+
+   	const questionOrderElement = document.getElementById("question_order");
+
+	// Set the value attribute of the input element
+	questionOrderElement.value = questionOrder.toString();
+
+	displayForm(questionOrder);
+}
+
+function shuffleArray(array) {
+  	for (let i = array.length - 1; i > 0; i--) {
+    	const j = Math.floor(Math.random() * (i + 1));
+    	[array[i], array[j]] = [array[j], array[i]];
+  	}
+  	return array;
+}
+
+function generateQuestionOrder() {
+    var questionOrder = [];
+
+    for (let i = 1; i <= 10; i++) {
+    	var answersOrder = [1, 2, 3];
+    	for (let i = 0; i < 10; i++) {
+    		answersOrder = shuffleArray(answersOrder);
+    	}
+    	questionOrder.push([i].concat(answersOrder));
+    }
+
+    for (let i = 0; i < 10; i++) {
+    	questionOrder = shuffleArray(questionOrder);
+    }
+
+    return questionOrder;
+}
+
+function generateQuestion(qnum, array) {
+    const questionMarkers = ["A", "B", "C"];
+    const questionNum = array[0];
+
+    var questionHtml = `
+    <div>
+		<h2>Question ${qnum}</h2>
+			<table>
+				<tbody>
+					<tr>
+						<td class="audiotable"><b>Main Audio Clip</b></td>
+						<td>
+							<audio src="./actual/q${questionNum}/ogseed.wav" controls="controls">Your browser does not support the audio element.</audio>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<br>
+
+		<label for="q${questionNum}_identify"><b>Identify:</b> Which ending to the main audio clip do you believe was written by AI? <span class="required_question">*</span></label><br><br>
+
+		<div id="q${questionNum}-options-container">`;
+
+	for (let i = 1; i <= 3; i++) {
+		let currentQuestion = array[i];
+
+		questionHtml += `
+		<div>
+        	<input type="radio" id="q${questionNum}o${currentQuestion}" name="q${questionNum}" value="${currentQuestion}" required>
+        	<label for="q${questionNum}o${currentQuestion}"><b>Ending ${questionMarkers[i - 1]}</b></label><br>
+        	<audio controls>
+        	    <source src="./actual/q${questionNum}/${key[questionNum - 1][currentQuestion - 1]}.wav" type="audio/mpeg">
+        	    Your browser does not support the audio element.
+        	</audio><br>
+        </div>`;
+	}
+
+	questionHtml += `
+	<br>
+
+	<label for="q${questionNum}_happy"><b>Happiness Rating:</b> For each of the audio clips, rank on a scale of 1 to 5 how happy the music made you feel. (1 = music did not make you happy at all, 5 = music made you extremely happy) <span class="required_question">*</span></label>
+
+	<br><br>
+
+    <table>
+    	<tr>
+      		<th class="optionmarker"></th>
+      			<th>😐<br>1</th>
+      			<th>🙂<br>2</th>
+      			<th>😀<br>3</th>
+      			<th>😁<br>4</th>
+      			<th>😆<br>5</th>
+    		</tr>
+    		<tr>
+      			<td class="optionmarker"><b>Main</b></td>
+      			<td><input type="radio" name="q${questionNum}happy0" value="1" required></td>
+      			<td><input type="radio" name="q${questionNum}happy0" value="2" required></td>
+      			<td><input type="radio" name="q${questionNum}happy0" value="3" required></td>
+      			<td><input type="radio" name="q${questionNum}happy0" value="4" required></td>
+      			<td><input type="radio" name="q${questionNum}happy0" value="5" required></td>
+    		</tr>`;
+
+    for (let i = 1; i <= 3; i++) {
+    	questionHtml += `
+		<tr>
+      		<td class="optionmarker"><b>Ending ${questionMarkers[i - 1]}</b></td>
+      		<td><input type="radio" name="q${questionNum}happy${array[i]}" value="1" required></td>
+      		<td><input type="radio" name="q${questionNum}happy${array[i]}" value="2" required></td>
+      		<td><input type="radio" name="q${questionNum}happy${array[i]}" value="3" required></td>
+      		<td><input type="radio" name="q${questionNum}happy${array[i]}" value="4" required></td>
+      		<td><input type="radio" name="q${questionNum}happy${array[i]}" value="5" required></td>
+    	</tr>`;
+	}
+
+	questionHtml += `</table>`;
+
+	questionHtml += `
+	<br>
+
+	<label for="q${questionNum}_sad"><b>Sadness Rating:</b> For each of the audio clips, rank on a scale of 1 to 5 how sad the music made you feel. (1 = music did not make you sad at all, 5 = music made you extremely sad) <span class="required_question">*</span></label><br><br>
+
+    <table>
+    	<tr>
+      		<th class="optionmarker"></th>
+      		<th>😐<br>1</th>
+      		<th>☹️<br>2</th>
+      		<th>😞<br>3</th>
+      		<th>😖<br>4</th>
+      		<th>😭<br>5</th>
+    	</tr>
+    	<tr>
+      		<td class="optionmarker"><b>Main</b></td>
+      		<td><input type="radio" name="q${questionNum}sad0" value="1" required></td>
+      		<td><input type="radio" name="q${questionNum}sad0" value="2" required></td>
+      		<td><input type="radio" name="q${questionNum}sad0" value="3" required></td>
+      		<td><input type="radio" name="q${questionNum}sad0" value="4" required></td>
+      		<td><input type="radio" name="q${questionNum}sad0" value="5" required></td>
+    	</tr>`;
+
+    for (let i = 1; i <= 3; i++) {
+	questionHtml += `
+		<tr>
+      		<td class="optionmarker"><b>Ending ${questionMarkers[i - 1]}</b></td>
+      		<td><input type="radio" name="q${questionNum}sad${array[i]}" value="1" required></td>
+      		<td><input type="radio" name="q${questionNum}sad${array[i]}" value="2" required></td>
+      		<td><input type="radio" name="q${questionNum}sad${array[i]}" value="3" required></td>
+      		<td><input type="radio" name="q${questionNum}sad${array[i]}" value="4" required></td>
+      		<td><input type="radio" name="q${questionNum}sad${array[i]}" value="5" required></td>
+    	</tr>`;
+	}
+
+	questionHtml += `
+		</table>
+    </div>`;
+
+    return questionHtml;
+}
+
+function generateForm(array) {
+    let formHtml = ``;
+
+    for (let i = 0; i < 10; i++) {
+    	formHtml += generateQuestion(i + 1, array[i]);
+    	formHtml += `<br>`;
+    }
+
+    return formHtml;
+}
+
+function displayForm(array) {
+    var mainForm = document.getElementById("main-form");
+    var formHtml = generateForm(array);
+    var formContainer = mainForm.nextElementSibling;
+    formContainer.innerHTML = formHtml;
+}
