@@ -1,3 +1,9 @@
+---
+title: Peco
+layout: template
+filename: peco.md
+---
+
 # Testsite
 
 ### Contents
