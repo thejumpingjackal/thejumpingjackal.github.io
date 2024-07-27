@@ -1,3 +1,9 @@
+---
+title: Sedona
+layout: template
+filename: sedona.md
+--- 
+
 # CPR Quality Metrics After Real-World Use of Zoll Defibrillators and Simulations
 
 **Internal Advisor:** Jessica Buckley

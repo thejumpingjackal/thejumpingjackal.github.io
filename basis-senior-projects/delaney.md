@@ -1,3 +1,9 @@
+---
+title: Delanet
+layout: template
+filename: delaney.md
+--- 
+
 # A Deep Dive Into The Blue Wrap Project: Sustainability and Human Connection in Medicine
 
 **Internal Advisor:** Rachel Joiner

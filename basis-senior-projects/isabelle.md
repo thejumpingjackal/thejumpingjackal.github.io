@@ -1,3 +1,9 @@
+---
+title: Isabelle
+layout: template
+filename: isabelle.md
+--- 
+
 # “CAGE”-ing the methicillin-susceptible Staph (MSSA) Biofilms Away
 
 **Internal Advisor:** Tom Talasek

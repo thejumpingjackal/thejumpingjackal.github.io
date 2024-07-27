@@ -1,3 +1,9 @@
+---
+title: Dain
+layout: template
+filename: dain.md
+--- 
+
 # Language Barriers and Bias in Court; How Do We Dispel Linguistic Bias?
 
 **Internal Advisor:** Amy Green

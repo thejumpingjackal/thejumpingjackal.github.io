@@ -1,3 +1,9 @@
+---
+title: Edward
+layout: template
+filename: edward.md
+--- 
+
 # Humans vs. AI: Can we tell the difference musically?
 
 **Internal Advisor:** Jeffrey Winslow & Christian Martin

@@ -1,3 +1,9 @@
+---
+title: Aaron
+layout: template
+filename: aaron.md
+--- 
+
 # Becoming Ironman
 
 **Internal Advisor:** Andrew Robarge

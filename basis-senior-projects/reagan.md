@@ -1,3 +1,9 @@
+---
+title: Reagan
+layout: template
+filename: reagan.md
+--- 
+
 # Homelessness: A Political Divide
 
 **Internal Advisor:** Andrew Robarge

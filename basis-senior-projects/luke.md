@@ -1,3 +1,9 @@
+---
+title: Luke
+layout: template
+filename: luke.md
+--- 
+
 # The Road to Pilot Proficiency
 
 **Internal Advisor:** Luke Calhoun

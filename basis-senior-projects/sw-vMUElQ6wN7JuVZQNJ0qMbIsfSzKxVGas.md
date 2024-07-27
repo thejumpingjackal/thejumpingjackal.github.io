@@ -1,3 +1,9 @@
+---
+title: Serra
+layout: template
+filename: sw-vMUElQ6wN7JuVZQNJ0qMbIsfSzKxVGas.md
+--- 
+
 # Are We Prepared to Stop the Bleed?
 
 **Internal Advisor:** Trent McDowell

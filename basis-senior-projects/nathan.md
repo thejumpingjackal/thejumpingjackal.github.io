@@ -1,3 +1,9 @@
+---
+title: Nathan
+layout: template
+filename: nathan.md
+--- 
+
 # Monitor, Manage, Empower: Cardiac Telehealth Senior Research Project
 
 **Internal Advisor:** Amy Green

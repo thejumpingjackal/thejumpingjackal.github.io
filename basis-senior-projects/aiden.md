@@ -1,3 +1,9 @@
+---
+title: Aiden
+layout: template
+filename: aiden.md
+--- 
+
 # Biomechanics and Kung Fu: Bringing Traditional Martial Arts and Prosthetics Together
 
 **Internal Advisor:** Sheri Jordan
