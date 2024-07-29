@@ -30,19 +30,25 @@ img {
 
 .gallery {
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	overflow-x: auto;
+	gap: 10px;
+	max-width: 90%;
+	margin: auto;
 }
 
 .gallery-item {
-	flex: 1 0 auto;
+	flex: 1 1 calc(25% - 10px);
 	margin: 4px;
 	text-align: center;
+	box-sizing: border-box;
 }
 
 .gallery-item img {
 	width: 100%;
 	height: auto;
+	display: block;
+	object-fit: cover;
 }
 
 .caption {
