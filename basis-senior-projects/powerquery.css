@@ -1,0 +1,21 @@
+/* Base styles for the code block */
+code.language-pq {
+    display: block;
+    white-space: pre-wrap; /* Enables soft wrapping */
+    background-color: #282c34; /* Dark background */
+    padding: 10px;
+    border-radius: 4px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    line-height: 1.5;
+    color: #abb2bf; /* Light grey text */
+}
+
+/* Syntax highlighting for PowerQuery */
+.language-pq .keyword { color: #c678dd; font-weight: bold; } /* Keywords like let, in, if, else */
+.language-pq .function { color: #61afef; } /* Function names */
+.language-pq .variable { color: #e06c75; } /* Variable names */
+.language-pq .string { color: #98c379; } /* Strings */
+.language-pq .number { color: #d19a66; } /* Numbers */
+.language-pq .comment { color: #7f848e; font-style: italic; } /* Comments */
+.language-pq .operator { color: #56b6c2; } /* Operators like +, -, *, / */
+.language-pq .type { color: #e5c07b; } /* Data types like type text */
