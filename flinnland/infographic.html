@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finnish Architecture & Design</title>
+    <link rel="icon" href="./img/lippu.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #F5F5F5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+        /* Flexibility: Control how many images per row based on a custom property (variable) */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(var(--images-per-row, 3), 1fr); /* Default: 3 images per row */
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 100%;
+            min-height: 350px; /* Ensure all images are at least 300px tall */
+            max-height: 350px;
+            height: 350px; /* Fixed height for all images */
+            object-fit: cover; /* Ensures the image fills the container and is cropped if necessary */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        figure {
+            margin: 5px;
+        }
+        figcaption {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+            margin-top: 8px;
+        }
+        .map-container {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .map {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.map img {
+    width: 100%;
+    display: block;
+    transition: filter 0.3s ease-in-out;
+}
+
+.map::after {
+    content: attr(data-text); /* Pulls text from a custom attribute */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.map:hover img {
+    filter: brightness(50%); /* Darkens the image */
+}
+
+.map:hover::after {
+    opacity: 1; /* Reveals text */
+}
+        table {
+    border-collapse: collapse; /* Optional: for a cleaner look, removes double borders */
+    width: 100%; /* Optional: Adjust table width */
+  }
+
+  th, td {
+    width: 33%;
+    border: 1px solid black; /* Adds border to table cells */
+    padding: 8px; /* Optional: Adds padding inside cells */
+    text-align: center; /* Optional: Aligns text in the cells */
+  }
+
+  ul li {
+    padding: 8px;
+  }
+
+  a {
+    color: rgb(200, 200, 255);
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Suomalainen arkkitehtuuri ja muotoilu</h1>
+        <p>Finnish architecture has existed for over a millennium, and many Germanic and Baltic influences can be seen throughout a lot of Finland's buildings.<br>How has Finnish architecture evolved throughout the ages? And what are its defining features?<br><br>Find a digital version of this infographic at: <a href="https://thejumpingjackal.github.io/flinnland/infographic.html">https://thejumpingjackal.github.io/flinnland/infographic.html</a></p>
+    </header>
+    
+    <section class="section">
+        <h2>History of Finnish Architecture</h2>
+        <p>Finnish architecture begins with the Uralic peoples, who migrated out of the Kama River valley and settled in modern Russia, Fennoscandia, the Baltics, and Hungary. Only loosely linked tribes, the Finns were crusaded by Sweden and annexed in 1250, then lost to Russia in 1809, gaining architectural inspiration from both countries. Finnish independence in 1917 allowed buildings to reflect a newfound national pride which gave way to sustainable building practices that still define Finnish architecture to this day.</p>
+        <div class="image-gallery" style="--images-per-row: 3;">
+            <figure>
+                <img src="./img/goahti.jpg" alt="Ancient Finnish hut">
+                <figcaption>
+                    <h3>Kodat (Goađit)</h3>
+                    <p>c. 5300 BCE - 1000 CE</p>
+                    <p>Made of wood, animal hides, and turf</p>
+                    <p>Used by Neolithic Uralic peoples</p>
+                    <p>Circular with conical roof</p>
+                    <p>Survival in harsh environment</p>
+                    <p>Still in use by the Sámi people to the north</p>
+                    <p><b>Image Credit:</b> AleWi</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/olavinlinna.jpg" alt="Olavinlinna Castle">
+                <figcaption>
+                    <h3>Keskiaika (Medieval)</h3>
+                    <p>c. 1100 - 1500 CE (Finland)</p>
+                    <p>Made of stone, wood, and brick</p>
+                    <p>Influenced by Gothic styles</p>
+                    <p>Heavy use of stone (kivirakennus)</p>
+                    <p>Castles (<b>Olavinlinna</b>, shown) and churches (Turun Tuomiokirkko)</p>
+                    <p><b>Image Credit:</b> HENKKA5</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/helsingin_tuomiokirkko.jpg" alt="Helsinki Cathedral">
+                <figcaption>
+                    <h3>Uusklassismi (Neoclassical)</h3>
+                    <p>c. 1760 - 1830 CE (Finljándija)</p>
+                    <p>Made of stone, brick, and plaster</p>
+                    <p>Inspiration from Greco-Roman architecture</p>
+                    <p>Focus on symmetry, order, and extravagance</p>
+                    <p>Monumental government and public buildings (<b>Helsingin Tuomiokirkko</b>, shown</p>
+                    <p>Symbolizing national identity</p>
+                    <p><b>Image Credit:</b> Alvesgaspar</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="image-gallery" style="--images-per-row: 2;">
+            <figure>
+                <img src="./img/paimion_parantola_ex.jpg" alt="Paimio Sanatorium exterior">
+            </figure>
+            <figure>
+                <img src="./img/uuspuukaupunki_ex.jpg" alt="Uuspuukaupunki exterior">
+            </figure>
+        </div>
+
+        <div class="image-gallery" style="--images-per-row: 2;">
+            <figure>
+                <img src="./img/paimion_parantola_in.jpg" alt="Paimio Sanatorium interior">
+                <figcaption>
+                    <h3>Modernismi (Modernism)</h3>
+                    <p>c. 1920 - 1960</p>
+                    <p>Made of concrete, steel, glass, and wood</p>
+                    <p>Championed by Alvar Aalto</p>
+                    <p>Functional simplicity and a shift from historical style</p>
+                    <p>Focus on beauty and practicality, with clean lines and open spaces</p>
+                    <p>Blending form with function (<b>Paimio Sanatorium</b>, shown)</p>
+                    <p><b>Image Credit:</b> Leon Liao</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/uuspuukaupunki_in.jpg" alt="Uuspuukaupunki interior">
+                <figcaption>
+                    <h3>Nykyarkkitehtuuri (Contemporary)</h3>
+                    <p>c. 2000 - present</p>
+                    <p>Made of sustainable wood, glass, steel, and composite materials</p>
+                    <p>Focus on sustainability, minimalism, and a connection with nature</p>
+                    <p>Eco-friendly materials (kestäväpuu) in large projects (<b>Uuspuukaupunki</b>, top; <b>Katajanokanlaituri</b>, bottom)</p>
+                    <p>Energy efficiency, blending technology with the environment</p>
+                    <p><b>Image Credit:</b> Tuomas Uusheimo</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Hallmarks of Finnish Architecture</h2>
+        <p>Today, there are many architectural features that distinguish Finland from the rest of the world and its Fennoscandian neighbors. Below are some defining characteristics of the country's architecture.</p>
+        <div class="image-gallery" style="--images-per-row: 3;">
+            <figure>
+                <img src="./img/koli.jpg" alt="Koli National Park Visitor Center">
+                <figcaption>
+                    <h3>Luontoyhteys (Natural Integration)</h3>
+                    <p>Large windows</p>
+                    <p>Sustainable materials</p>
+                    <p><b>Koli kansallipuiston kävijäkeskus</b>, shown</p>
+                    <p><b>Image Credit:</b> Suomalainen Metsähallitus</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/katajanokanlaituri.jpg" alt="Katajanokanlaituri">
+                <figcaption>
+                    <h3>Puuarkkitehtuuri (Wood Architecture)</h3>
+                    <p>Log houses</p>
+                    <p>Wooden skyscrapers</p>
+                    <p><b>Katajanokanlaituri</b>, shown</p>
+                    <p><b>Image Credit:</b> Jane Englefield</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/kiasma.jpg" alt="Kiasma Museum of Contemporary Art">
+                <figcaption>
+                    <h3>Minimalismi ja käytännöllisyys (Minimalism and Functionality)</h3>
+                    <p>Clean and practical designs</p>
+                    <p><b>Nykytaiteen museo Kiasma</b>, shown</p>
+                    <p><b>Image Credit:</b> Pilkington</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="image-gallery" style="--images-per-row: 3;">
+            <figure>
+                <img src="./img/suomalainen_paviljonki.jpg" alt="Finnish Pavilion at 1939 World Expo">
+                <figcaption>
+                    <h3>Orgaaninen modernismi (Organic Modernism)</h3>
+                    <p>Curved, flowing forms</p>
+                    <p>Championed by Aalto</p>
+                    <p><b>Suomalainen paviljonki (1939 NY World Fair)</b>, shown</p>
+                    <p><b>Image Credit:</b> Ezra Stoller</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/hanasaari_sauna.jpg" alt="Hanasaari Hotel Sauna">
+                <figcaption>
+                    <h3>Sauna-arkkitehtuuri (Sauna Culture)</h3>
+                    <p>Standalone saunas</p>
+                    <p><b>Hotelli Hanasaari</b>, shown</p>
+                    <p><b>Image Credit:</b> taidekoti</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/oodi.jpg" alt="Oodi Library">
+                <figcaption>
+                    <h3>Kestävä kehitys (Innovative Sustainability)</h3>
+                    <p>Ecological building practices</p>
+                    <p>Energy efficiency</p>
+                    <p><b>Keskustakirjasto Oodi</b>, shown</p>
+                    <p><b>Image Credit:</b> Tuomas Uusheimo</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Famous Finnish Architecture</h2>
+        <div class="image-gallery" style="--images-per-row:3">
+            <figure>
+                <div class="map" data-text="Temppeliaukion kirkko (Helsinki)">
+                    <img src="./img/temppeliaukion_kirkko.jpg" alt="Temppeliaukion Kirkko">
+                </div>
+            </figure>
+            <figure>
+                <div class="map" data-text="Helsingin päärautatieasema (Helsinki)">
+                    <img src="./img/helsinki_station.jpg" alt="Helsinki Station">
+                </div>
+            </figure>
+            <figure>
+                <div class="map" data-text="Helsingin keskustakirjasto Oodi (Helsinki)">
+                    <img src="./img/oodi_2.jpg" alt="Helsinki Oodi Library">
+                </div>
+            </figure>
+        </div>
+
+        <div class="image-gallery" style="--images-per-row:3">
+            <figure>
+                <div class="map" data-text="Finlandiatalo (Helsinki)">
+                    <img src="./img/finlandiatalo.jpg" alt="Finlandiatalo">
+                </div>
+            </figure>
+            <figure>
+                <div class="map" data-text="Nykytaiteen museo Kiasma (Helsinki)">
+                    <img src="./img/kiasma_2.jpg" alt="Kiasma Museum of Contemporary Art">
+                </div>
+            </figure>
+            <figure>
+                <div class="map" data-text="Löyly (Helsinki)">
+                    <img src="./img/loyly.jpg" alt="Löyly">
+                </div>
+            </figure>
+        </div>
+
+        <div class="image-gallery" style="--images-per-row:3">
+            <figure>
+                <div class="map" data-text="Turun tuomiokirkko (Turku)">
+                    <img src="./img/turun_tuomiokirkko.jpg" alt="Turku Cathedral">
+                </div>
+                <div class="map" data-text="Hämeenlinna">
+                    <img src="./img/hameenlinna.jpg" alt="Hämeenlinna">
+                </div>
+            </figure>
+            <figure>
+                <div>
+                    <img src="./img/kartta.png" alt="Map of Finland" style="width: auto; min-height: 700px; height: 700px; display: block; margin: 0 auto; grid-column: span 2;">
+                </div>
+            </figure>
+            <figure>
+                <div class="map" data-text="Olavinlinna (Savonlinna)">
+                    <img src="./img/olavinlinna_2.jpg" alt="Olavinlinna">
+                </div>
+                <div class="map" data-text="Paimion parantola (Paimio)">
+                    <img src="./img/paimion_parantola_2.jpg" alt="Paimio Sanatorium">
+                </div>
+            </figure>
+        </div>
+
+        <div class="image-gallery" style="--images-per-row:3">
+            <figure>
+                <div class="map" data-text="Kamppi kappeli (Helsinki)">
+                    <img src="./img/kamppi.jpg" alt="Kamppi Chapel">
+                </div>
+            </figure>
+            <figure>
+                <div class="map" data-text="Tampereen tuomiokirkko (Tampere)">
+                    <img src="./img/tampere_tuomiokirkko.jpg" alt="Tampere Cathedral">
+                </div>
+            </figure>
+            <figure>
+                <div class="map" data-text="Oulun kaupungintalo (Oulu)">
+                    <img src="./img/oulun_kaupungintalo.jpg" alt="Oulu City Hall">
+                </div>
+            </figure>
+        </div>
+
+        <div class="image-gallery" style="--images-per-row:3">
+            <figure>
+                <div class="map" data-text="Sibeliustalo (Lahti)">
+                    <img src="./img/sibeliustalo.jpg" alt="Sibeliustalo">
+                </div>
+            </figure>
+            <figure>
+                <div class="map" data-text="Puijon torni (Kuopio)">
+                    <img src="./img/puijo.jpg" alt="Puijo Tower">
+                </div>
+            </figure>
+            <figure>
+                <div class="map" data-text="Joensuun kaupungintalo (Joensuu)">
+                    <img src="./img/joensuun_kaupungintalo.jpg" alt="Joensuu City Hall">
+                </div>
+            </figure>
+        </div>
+
+        <h4>Image Credits (top-to-bottom, left-to-right)</h4>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>Allison Meier</td>
+                    <td>Anne Pietarinen</td>
+                    <td>Tuomas Uusheimo</td>
+                </tr>
+                <tr>
+                    <td>Finlandia-talo</td>
+                    <td>Paasikivi</td>
+                    <td>Vadelmavene</td>
+                </tr>
+                <tr>
+                    <td>Turun Sanomat</td>
+                    <td rowspan="2"><em>[map, The World Factbook]</em></td>
+                    <td>Kansallis Museo</td>
+                </tr>
+                <tr>
+                    <td>Kanta-Hämeen kuvapankki</td>
+                    <td>Design Hima</td>
+                </tr>
+                <tr>
+                    <td>Marko Huttunen</td>
+                    <td>Visit Tampere</td>
+                    <td>Estormiz</td>
+                </tr>
+                <tr>
+                    <td>Sinfonia Lahti</td>
+                    <td>Visit Finland</td>
+                    <td>Tuohirulla & Jorchr</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="section">
+        <h2>Trivia!</h2>
+
+        <ul>
+            <li>🏰 <b>Olavinlinna</b> (built in 1475), is the <b>northernmost medieval stone castle</b> still standing. It was strategically built on an island in Savonlinna to protect against Russian invaders.</li>
+            <li>⛪ Helsinki's <b>Temppeliaukion kirkko</b> (aka the Rock Church, <em>Kivikirkko</em>) was carved <b>directly into granite bedrock</b> in 1969. It has a <b>copper dome and skylights</b>, generating amazing acoustics for events in the building.</li>
+            <li>🌲 The city of <b>Old Rauma</b> (<em>Vanha Rauma</em>) is the <b>largest preserved wooden town</b> in the Nordic countries. Some buildings date back to the <b>1600s</b> and still serve as homes, shops, and cafés.</li>
+            <li>🏢 The tallest building in Finland is the <b>Majakka Tower</b> (134 m / 440 ft) in <b>Helsinki</b>. The skyscraper is a residential complex that offers breathtaking views of the city.</li>
+            <li>🔥 The Finns love their saunas. In the entire country of Finland, there are <b>more saunas than cars</b>! That means that there are over <b>2 million saunas</b> nationwide.</li>
+            <li>📚 Helsinki's <b>Keskustakirjasto Oodi</b> is one of the most <b>eco-friendly libraries</b> on the planet, boasting an array of <b>solar panels</b>, <b>sustainable materials</b>, and even <b>an adaptable open-space design</b>. It was voted the best new library in the world in 2019.</li>
+            <li>🔔 The <b>Kamppi Kappeli</b> is also known colloquially as <b>Hiljaisuuskappeli</b> (lit. Chapel of Silence), as the chapel was originally designed for quiet reflection. Thus, the chapel has <b>no bells, no crosses, and no religious symbols</b>, as its aim is to emphasize peace and personal contemplation over faith.</li>
+            <li>🌊 The <b>Bengtskär Lighthouse</b> (built in 1906) is the <b>tallest lighthouse in the Nordic countries</b> at <b>52 meters (171 ft)</b>. The lighthouse is located on a small island in the Baltic Sea, and it operates as a <b>hotel and museum</b>, giving visitors a chance to stay overnight in a more historic setting.</li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>Designed by Edward Wang | &copy; 2025</p>
+    </footer>
+</body>
+</html>
