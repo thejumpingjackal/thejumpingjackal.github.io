@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suomen matkan kuvagalleria</title>
+    <link rel="icon" href="../img/lippu.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --gap: 8px;
+      }
+
+      /* ─── Custom User Styles ───────────────────────────────────────── */
+      body {
+        font-family: 'Raleway', sans-serif;
+        background-color: #F5F5F5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #2C3E50;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      header h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        margin: 0;
+      }
+
+      header p {
+        margin: auto;
+        max-width: 80%;
+      }
+
+      h2 {
+        text-align: center;
+        margin: auto;
+        font-size: 1.5rem;
+        font-family: 'Playfair Display', serif;
+      }
+
+      .section {
+        max-width: 80%;
+        margin: auto;
+        padding: 2rem;
+      }
+
+      a {
+        color: rgb(200, 200, 255);
+      }
+
+      .footer {
+        background-color: #2C3E50;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+
+      /* ─── Masonry‑style CSS Grid ────────────────────────────────────── */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-auto-rows: 10px;
+        gap: var(--gap);
+        margin: 1rem auto 3rem;
+        max-width: 1200px;
+        padding: 2rem;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+      }
+
+      .gallery img:hover {
+        opacity: 0.9;
+      }
+
+      video {
+        align-self: center;
+        width: 25%;
+      }
+
+      /* ─── Lightbox Overlay ──────────────────────────────────────────── */
+      .lightbox {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+        z-index: 1000;
+      }
+
+      .lightbox.open {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .lightbox-content {
+        position: relative;
+        max-width: 90vw;
+        max-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+      }
+
+      .lightbox-image {
+        max-height: 70vh;
+        max-width: 100%;
+        object-fit: contain;
+        border-radius: 4px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .lightbox-caption {
+        margin-top: 1rem;
+        text-align: center;
+        max-width: 90vw;
+      }
+
+      .lightbox h2 {
+        margin: 0 0 0.25rem;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 1.4rem;
+      }
+
+      .lightbox time {
+        display: block;
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      .lightbox p {
+        margin-top: 0.5rem;
+        font-size: 0.95rem;
+      }
+
+      .lightbox .nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2.7rem;
+        line-height: 1;
+        user-select: none;
+        cursor: pointer;
+        padding: 0.35em 0.55em;
+        background: rgba(0, 0, 0, 0.45);
+        border-radius: 50%;
+      }
+
+      .lightbox .nav.prev {
+        left: -64px;
+      }
+
+      .lightbox .nav.next {
+        right: -64px;
+      }
+
+      .lightbox .close {
+        position: absolute;
+        top: -46px;
+        right: 0;
+        font-size: 2rem;
+        cursor: pointer;
+        line-height: 1;
+      }
+
+      @media (max-width: 600px) {
+        .lightbox .nav {
+          display: none;
+        }
+
+        .lightbox .close {
+          top: -40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1>Suomen matka kuvigalleria</h1>
+        <p><br>I have had an amazing couple of weeks spent with the most amazing people in Finland and Estonia, and I wanted to gather a lot of the photos that I took during my time there into a small online gallery.<br><br>Unless specified, all photo times can be assumed to correspond with Eastern European Summer Time (EEST), or UTC+03:00.<br><br><b>Disclaimer:</b> If you show up in a photo and would like it deleted, please feel free to email me at <a href="mailto:edwardanwang@gmail.com">edwardanwang@gmail.com</a>.</p>
+    </header>
+
+    <div class="section">
+      <h2>Flight to Finland</h2>
+      <section class="gallery" data-gallery="1">
+        <img src=".\images\flight-to\PXL_20250518_202257648.jpg" alt="Sky Harbor Airport in Phoenix" data-title="Sky Harbor Airport (PHX)" data-date="Sunday, May 18, 2025 - 13:22 (UTC-7)" data-desc="An image of the plane that we took from Phoenix Sky Harbor Airport (PHX) to Chicago O'Hare Airport (ORD).">
+        <img src=".\images\flight-to\PXL_20250519_012456454.jpg" alt="Chicago O'Hare Airport sunset" data-title="Chicago O'Hare Airport (ORD)" data-date="Sunday, May 18, 2025 - 20:24 (UTC-5)" data-desc="An image of the sunset outside of Chicago O'Hare Airport (ORD). Not exactly an Arizona sunset, but I still found it quite beautiful.">
+        <img src=".\images\flight-to\PXL_20250519_025808373.MP.jpg" alt="Chicago at nighttime as seen from a plane" data-title="Chicago at Nighttime" data-date="Sunday, May 18, 2025 - 21:58 (UTC-5)" data-desc="A stunning view of Chicago from the left side of the flight to Helsinki. Not a fan of the light pollution, but I'd be lying if I said I didn't find this beautiful.">
+        <img src=".\images\flight-to\PXL_20250519_101616339.jpg" alt="Swedish coast as seen from a plane" data-title="Flying Over Sweden" data-date="Monday, May 19, 2025 - 12:28 (UTC+2)" data-desc="Some of the first glimpses of Scandinavia we saw! This photo was taken as we were flying above Sweden's southeastern coastal area.">
+        <img src=".\images\flight-to\PXL_20250519_105859160.jpg" alt="Finnish lakes as seen from a plane" data-title="First Glimpse of Finland" data-date="Monday, May 19, 2025 - 13:58" data-desc="My first photo of Finland a little ways in from the southern coast. Karri wasn't lying about Finland being &#8220;the land of a thousand lakes&#8221;!">
+      </section>
+
+      <h2>Helsinki - Monday, May 19, 2025</h2>
+      <section class="gallery" data-gallery="2">
+        <img src=".\images\5-19\PXL_20250519_112955324.jpg" alt="A view out of a window at Helsinki-Vantaa Airport" data-title="Helsinki-Vantaa Airport (HEL)" data-date="Monday, May 19, 2025 - 14:29" data-desc="A look outside the terminal at Helsinki-Vantaa Airport (HEL). First touchdown in Finland!">
+        <img src=".\images\5-19\PXL_20250519_133548437.jpg" alt="A view outside of Helsinki Radisson Blu Plaza Hotel" data-title="Hotel View" data-date="Monday, May 19, 2025 - 16:35" data-desc="A view out of the window at Radisson Blu Plaza Hotel. It was getting a bit late, but it still looked like early afternoon!">
+        <img src=".\images\5-19\PXL_20250519_141544405.jpg" alt="Group of Flinn scholars walking on the sidewalk" data-title="Walk Down Mikonkatu" data-date="Monday, May 19, 2025 - 17:15" data-desc="First excursion in a new land! Here's us on a short tour of Rautatientori guided by Karri.">
+        <img src=".\images\5-19\PXL_20250519_141901062.jpg" alt="A statue of Aleksis Kivi" data-title="Aleksis Kivi" data-date="Monday, May 19, 2025 - 17:19" data-desc="A statue of Aleksis Kivi, Finland's national writer. He is best known for his classic, *Seitsemän veljestä* (&#8220;Seven Brothers&#8221;).">
+        <img src=".\images\5-19\PXL_20250519_142800571.MP.jpg" alt="A flowering crabapple tree in front of a restaurant" data-title="Flowering Crabapple" data-date="Monday, May 19, 2025 - 17:28" data-desc="A beautiful flowering crabapple tree in Rautatientori. I want to say it's *Malus domestica* or *Malus × zumi*, but I'm not totally sure.">
+
+        <img src=".\images\5-19\PXL_20250519_143023048.jpg" alt="An ad for Coca-Cola with 'Helsinki' formed by the names on the bottles" data-title="Hel-Sin-ki" data-date="Monday, May 19, 2025 - 17:30" data-desc="I thought this Coke ad was really cute: Share a Coke with __**Hel**__ena, __**Sin**__i, and Heik__**ki**__!">
+        <img src=".\images\5-19\PXL_20250519_143330657.jpg" alt="A clock hanging on the wall of an office building" data-title="Sanoma Media Clock" data-date="Monday, May 19, 2025 - 17:33" data-desc="A clock in the office building of Sanoma Media Finland Oy. Here we were introduced to the Finnish idea of &#8220;trust&#8221;, as there was no security check to enter the building.">
+        <img src=".\images\5-19\PXL_20250519_143432295.MP.jpg" alt="Helsinki's public library Oodi" data-title="Keskustakirjasto Oodi" data-date="Monday, May 19, 2025 - 17:34" data-desc="Helsinki's central public library. It features a lot of wood and glass built into smooth forms enigmatic of modern Finnish architectural design.">
+        <img src=".\images\5-19\PXL_20250519_144729958.jpg" alt="Inside Central Library Oodi, with lots of light coming through the windows" data-title="Inside the Library" data-date="Monday, May 19, 2025 - 17:47" data-desc="The third floor of Central Library Oodi. This floor itself features a daycare, a café, an information desk, study areas, and of course a plethora of books.">
+        <img src=".\images\5-19\PXL_20250519_145412202.PANO.jpg" alt="A panorama from the balcony of Central Library Oodi" data-title="View from Library Balcony" data-date="Monday, May 19, 2025 - 17:54" data-desc="An amazing view from the balcony of Central Library Oodi. In the center of the image is Finlandia-talo, the national music hall, and to its left is Eduskunta, the Finnish parliament building.">
+
+        <img src=".\images\5-19\PXL_20250519_151555179.MP.jpg" alt="A picture of Helsinki's Museum of Contemporary Art Kiasma" data-title="Nykytaiteen museo Kiasma" data-date="Monday, May 19, 2025 - 18:15" data-desc="The Museum of Contemporary Art Kiasma in Helsinki. I love the glass architecture featured on its side!">
+        <img src=".\images\5-19\PXL_20250519_152137788.jpg" alt="A picture of Lasipalatsi Square" data-title="Lasipalatsinaukio" data-date="Monday, May 19, 2025 - 18:21" data-desc="Lasipalatsi Square features smooth architectural styles. These artificial hills are actually the ceiling of an art museum!">
+        <img src=".\images\5-19\PXL_20250519_152415337.jpg" alt="A picture of the bowl-shaped Kamppi Chapel" data-title="Kampin kappeli" data-date="Monday, May 19, 2025 - 18:24" data-desc="Also known as &#8220;The Chapel of Silence,&#8221; the Kamppi Chapel's bowl-like shape and lack of bells is meant to give an opportunity for silence and reflection in the heart of Helsinki.">
+        <img src=".\images\5-19\PXL_20250519_154921478.jpg" alt="A burning wax candle on a restaurant table" data-title="Welcome Dinner" data-date="Monday, May 19, 2025 - 18:49" data-desc="The start of our first proper Finnish meal featured this very nice candle at Ravintola Lappi.">
+        <img src=".\images\5-19\PXL_20250519_155358436.jpg" alt="A salad plated with two forks to its left and two knives to its right" data-title="First Course: Salad" data-date="Monday, May 19, 2025 - 18:53" data-desc="A lettuce salad featuring lappi cheese, pickled onions, microgreens, and blueberries.">
+
+        <img src=".\images\5-19\PXL_20250519_155406804.jpg" alt="A bread plate with butter on the side" data-title="Rieska and Ruisleipä" data-date="Monday, May 19, 2025 - 18:54" data-desc="A beautifully arranged breadbasket featuring Finnish flatbread; ruisleipä, a Finnish rye bread; and butter.">
+        <img src=".\images\5-19\PXL_20250519_162920261.jpg" alt="A plate featuring reindeer steak on a bed of carrots with a small potato on the side" data-title="Second Course: Reindeer" data-date="Monday, May 19, 2025 - 19:29" data-desc="A medium-rare reindeer steak on a bed of carrots covered in a red wine reduction. On the side is a potato topped with Lappish mustard cream and a sprig of parsley.">
+        <img src=".\images\5-19\PXL_20250519_165728668.MP.jpg" alt="Pancakes along with vanilla ice cream and bilberry sauce" data-title="Third Course: Dessert" data-date="Monday, May 19, 2025 - 19:57" data-desc="Lappish-style pancakes paired with vanilla ice cream on a bed of bilberry compote.">
+        <img src=".\images\5-19\PXL_20250519_172045988.jpg" alt="A picture of street buildings with a large tower in the background" data-title="A Look Down Kalevankatu" data-date="Monday, May 19, 2025 - 20:20" data-desc="A picture of the buildings on Kalevankatu. The tall tower is the Solo Sokos Hotel Torni at the intersection of Kalevankatu and Yrjönkatu.">
+        <img src=".\images\5-19\PXL_20250519_172848026.MP.jpg" alt="A street in Finland with a cloudy sunset in the sky" data-title="Finnish Sunset" data-date="Monday, May 19, 2025 - 20:28" data-desc="I was amazed by how bright it still was outside this late! These sunsets last long and are almost as beautiful as the ones in Arizona.">
+      </section>
+
+      <h2>Kulosaari, Helsinki, Suomenlinna - Tuesday, May 20, 2025</h2>
+      <section class="gallery" data-gallery="3">
+        <img src=".\images\5-20\PXL_20250520_053911864.jpg" alt="A green forest with a building nested behind some treees" data-title="First Sights of Kulosaari" data-date="Tuesday, May 20, 2025 - 8:39" data-desc="The island of Kulosaari had amazing scenery; I've never seen leaves and vegetation this verdant and lush!">
+        <img src=".\images\5-20\PXL_20250520_054256506.jpg" alt="A brick building with glass windows at the front" data-title="Kulosaaren yhteiskoulu" data-date="Tuesday, May 20, 2025 - 8:42" data-desc="For our first look at Finnish schooling, we went to Kulosaari Secondary school to meet with faculty and students.">
+        <img src=".\images\5-20\PXL_20250520_085006718.jpg" alt="A wooden auditorium lined with rows of seats" data-title="Auditorium" data-date="Tuesday, May 20, 2025 - 11:50" data-desc="I fell in love with the design of the school, and this auditorium stands out as a space both for students to hang out and for faculty to host assemblies.">
+        <img src=".\images\5-20\PXL_20250520_090203100.PANO.jpg" alt="A panorama from the balcony of Kulosaari Secondary School" data-title="View from Kulosaari Secondary School" data-date="Tuesday, May 20, 2025 - 12:02" data-desc="A beautiful view of the forests surrounding the school in addition to all of the buildings that make up the campus.">
+        <img src=".\images\5-20\PXL_20250520_090743534.MP.jpg" alt="The sun peeking through greenery in the forest" data-title="Noon in Finland" data-date="Tuesday, May 20, 2025 - 12:07" data-desc="Sorry for all of the forest photos! I really couldn't get enough of the greenery :D">
+
+        <img src=".\images\5-20\PXL_20250520_095911219.jpg" alt="A plate of cooked salmon and assorted vegetables" data-title="First Lunch in Finland" data-date="Tuesday, May 20, 2025 - 12:59" data-desc="Grilled salmon topped with carrots, potatoes, parsnips, broccoli, dill cream sauce, parsley, and pink peppercorns.">
+        <img src=".\images\5-20\PXL_20250520_105347647.jpg" alt="A ladybug on a rock" data-title="Leppäkerttu" data-date="Tuesday, May 20, 2025 - 13:53" data-desc="Too cute not to share! Fun Fact: the Finnish word for ladybug literally means &#8220;blood Gertrude&#8221; (leppä + Kerttu).">
+        <img src=".\images\5-20\PXL_20250520_105453048.jpg" alt="A plaza surrounded by several buildings" data-title="Kauppatori" data-date="Tuesday, May 20, 2025 - 13:54" data-desc="The seaside market square of Helsinki. The Finnish flag marks Helsinki city hall, the Swedish flag marks the embassy, and the yellow building in the back is the presidential palace.">
+        <img src=".\images\5-20\PXL_20250520_105741473.MP.jpg" alt="A walkway lined with benches and trees with a statue in the middle" data-title="Esplanadi" data-date="Tuesday, May 20, 2025 - 13:57" data-desc="A beautiful walk down Espanadi with fellow Scholars. A statue of national poet Johan Ludvig Runeberg is in the back, with the Maiden of Finland holding the lyrics to the national anthem (written by Runeberg).">
+        <img src=".\images\5-20\PXL_20250520_111028525.jpg" alt="A plaza with grid floors, characterized by a large white Classical-style cathedral in the background" data-title="Senaatintori" data-date="Tuesday, May 20, 2025 - 14:10" data-desc="Senate Square comprises one of the older parts of Helsinki. The Helsinki Cathedral is to the left, while the Government Palace and Office of the Chancellor of Justice sit to the right. The statue to the right is of Alexander II, who promoted Finnish autonomy and nationalism within the Russian Empire.">
+
+        <img src=".\images\5-20\PXL_20250520_112523348.MP.jpg" alt="A street by the sea along with boats docked at a port" data-title="Kruunuvuorenselkä" data-date="Tuesday, May 20, 2025 - 14:25" data-desc="Helsinki's northern dock (Pohjoissatama) lined with boats. The body of water is an inlet called Kruunuvuorenselkä (lit. &#8220;Crown Mountain Bay&#8221;).">
+        <img src=".\images\5-20\PXL_20250520_112956993.MP.jpg" alt="A large Gothic-style cathedral with several spires" data-title="Uspenskin katedraali" data-date="Tuesday, May 20, 2025 - 14:29" data-desc="Uspenski Cathedral is an Eastern Orthodox cathedral built during the Russian occupation of Finland. The style is very reminiscent of other Orthodox structures like Cathedral of Christ the Savior!">
+        <img src=".\images\5-20\PXL_20250520_124147777.jpg" alt="Sticks on a stone wall arranged to say &#8220;Suomi&#8221;" data-title="Oksa Suomi" data-date="Tuesday, May 20, 2025 - 15:41" data-desc="We went on a scavenger hunt of Helsinki, and my team was comprised of Ariana, Brendan, Jared, and Nico. One of the prompts was &#8220;random objects arranged into the word &#8216;Suomi&#8217;&#8221;.">
+        <img src=".\images\5-20\PXL_20250520_134819511.jpg" alt="A view of the ocean and a few forested islands" data-title="On the Way to Suomenlinna" data-date="Tuesday, May 20, 2025 - 16:48" data-desc="We took a ferry across Kruunuvuorenselkä to Helsinki's historical fortress, Suomenlinna, and the views were absolutely gorgeous!">
+        <img src=".\images\5-20\PXL_20250520_142908129.jpg" alt="A view of a water channel with a historic brick building on its left side" data-title="View from Suomenlinnan Silta" data-date="Tuesday, May 20, 2025 - 17:29" data-desc="Comprised of eight islands, Suomenlinna has two major islands: Iso Mustasaari (lit. &#8220;Great Black Island&#8221;) and Susisaari (lit. &#8220;Wolf Island&#8221;), which are connected by a walking bridge.">
+
+        <img src=".\images\5-20\PXL_20250520_143254792.jpg" alt="A row of large stone archways" data-title="Inside the Fortress" data-date="Tuesday, May 20, 2025 - 17:32" data-desc="Suomenlinna is a historical fortress built under Swedish rule, so here's us in the actual walls of the fortress where armaments and ammunition used to be stored.">
+        <img src=".\images\5-20\PXL_20250520_144827361.PANO.jpg" alt="A view of the Baltic Sea with the sun centered" data-title="Suomenlinna Sunset" data-date="Tuesday, May 20, 2025 - 17:48" data-desc="We were greeted by this amazing sunset over the Baltic Sea once we made it to the west side of the island!">
+        <img src=".\images\5-20\PXL_20250520_144859870.MP.jpg" alt="A view of the Baltic Sea with the sun centered" data-title="Sunset on the Baltic Sea" data-date="Tuesday, May 20, 2025 - 17:48" data-desc="The view of the Baltic Sea from Kustaanmiekka (lit. &#8220;Gustav's Sword&#8221;, another island of Suomenlinna) was incredible, and I even got the chance sit right on the edge of sea to enjoy this sunset!">
+        <img src=".\images\5-20\PXL_20250520_151751375.jpg" alt="Barnacle geese with a white head and belly, along with grey wings and black neck and legs" data-title="Barnacle Geese" data-date="Tuesday, May 20, 2025 - 18:17" data-desc="Exploring the old hideouts on Suomenlinna, we saw some barnacle geese (*Branta leucopsis*) by a small water reservoir.">
+        <img src=".\images\5-20\PXL_20250520_153204794.PANO.jpg" alt="A sunset on a green, grassy island with a path along the coast" data-title="Sunset from the South Side" data-date="Tuesday, May 20, 2025 - 18:32" data-desc="I loved the view from the south side of Kustaanmiekka, where you can see both the greenery of Suomenlinna and the beauty of the sea.">
+
+        <img src=".\images\5-20\PXL_20250520_181047980.jpg" alt="A pizza topped with goat cheese, chicken, pea shoots, and pepper jam" data-title="Pizza Dinner" data-date="Tuesday, May 20, 2025 - 21:10" data-desc="A pizza topped with goat cheese, chicken, pea shoots, and sweet pepper jam.">
+      </section>
+
+      <h2>Latokartano, Helsinki - Wednesday, May 21, 2025</h2>
+      <section class="gallery" data-gallery="4">
+        <img src=".\images\5-21\PXL_20250521_060303701.jpg" alt="A modernist ceiling decoration resembling a 3D squiggle" data-title="First Look at Viikki Normal School" data-date="Wednesday, May 21, 2025 - 9:03" data-desc="Viikki Normal School is both a teachers' school and a K-12 school, with many facilities to give teachers training and students learning.">
+        <img src=".\images\5-21\PXL_20250521_061454282.MP.jpg" alt="" data-title="School Lunch at Viikki" data-date="Wednesday, May 21, 2025 - 9:14" data-desc="School lunch provisions are mandated in Finland. The cafeteria at Viikki was very open, and it offered many healthy and delicious options for teachers and students.">
+        <img src=".\images\5-21\PXL_20250521_091721631.jpg" alt="A bowl of salmon soup with a spoon in it" data-title="Lohikeitto" data-date="Wednesday, May 21, 2025 - 12:17" data-desc="Thursday is soup day at Viikki, and the offering for lunch was a classic Finnish dish: salmon soup with hearty potatoes and carrots.">
+        <img src=".\images\5-21\PXL_20250521_092543062.jpg" alt="A bowl of lentil soup accompanied with cucumbers and butter on rye bread" data-title="Linssikeitto and Ruisleipä" data-date="Wednesday, May 21, 2025 - 12:25" data-desc="A vegan option is mandatory in Finnish schools, to the vegan dish was lentil soup. In addition, I got ruisleipä topped with butter and cucumbers.">
+        <img src=".\images\5-21\PXL_20250521_161705886.jpg" alt="A road surrounded by many trees" data-title="Outside the Pesäpallo Field" data-date="Wednesday, May 21, 2025 - 19:17" data-desc="We watched a pesäpallo (lit. &#8220;nestball&#8220;) game, which is like a Finnish version of baseball. Although we did not understand the rules at all, we had a lot of fun cheering for our team!">
+
+        <img src=".\images\5-21\PXL_20250521_190521272.jpg" alt="A cobblestone street surrounded by Classical-style buildings" data-title="Sofiankatu" data-date="Wednesday, May 21, 2025 - 20:05" data-desc="On a late night excursion with friends, we saw some stunning architecture near the harbor!">
+        <img src=".\images\5-21\PXL_20250521_193513994.jpg" alt="A large Classical-style building adorned with statues and glass windows" data-title="Grand Hansa Hotel" data-date="Wednesday, May 21, 2025 - 20:35" data-desc="A nice hotel that we passed by on our way back from the harbor.">
+      </section>
+
+      <h2>Latokartano, Helsinki - Thursday, May 22, 2025</h2>
+      <!--<video src=".\images\5-22\PXL_20250522_071147621.mp4"data-type="video" data-title="Feeding Nella" data-date="Thursday, May 22, 2025 - 10:11" data-desc="This cutie is one of the reindeer cows at Nuuksion Poropuisto, Nella! She was born in 2013, and here I am feeding her some lichen." controls></video>-->
+      <section class="gallery" data-gallery="5">
+        <img src=".\images\5-22\PXL_20250522_064416591.jpg" alt="A small grassy clearing between a mix of coniferous and deciduous trees" data-title="Nuuksio National Park" data-date="Thursday, May 22, 2025 - 9:44" data-desc="A look at the beautiful forests of Finland near the city of Espoo.">
+        <img src=".\images\5-22\PXL_20250522_070144484.jpg" alt="A large hut made of wood and tarp" data-title="Kota (Goahti)" data-date="Thursday, May 22, 2025 - 10:01" data-desc="Kodat (Finnish, sg. kota) or goađit (Sámi, sg. goahti) are huts that were used in prehistoric (and sometimes modern) Finland to provide shelter and warmth from the cold!">
+        <img src=".\images\5-22\PXL_20250522_070918011.MP.jpg" alt="A male reindeer staring into the camera" data-title="Usva" data-date="Thursday, May 22, 2025 - 10:09" data-desc="The only male reindeer at Nuuksion Poropuisto, Usva is also the only reindeer born at the park, with the rest of the deer originating from Finland's northernmost region, Lapland.">
+        <img src=".\images\5-22\PXL_20250522_071638067.MP.jpg" alt="" data-title="Helmi and Nella" data-date="Thursday, May 22, 2025 - 10:16" data-desc="">
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+        <img src=".\images\5-22\" alt="" data-title="" data-date="Thursday, May 22, 2025 - " data-desc="">
+      </section>
+    </div>
+
+  <!-- ─── Lightbox Template (Cloned Per Gallery) ─────────────────────── -->
+  <template id="lightbox-template">
+    <div class="lightbox" role="dialog" aria-modal="true">
+      <div class="lightbox-content">
+        <span class="close" aria-label="Close">&times;</span>
+        <span class="nav prev" aria-label="Previous image">&#10094;</span>
+        <img class="lightbox-image" src="" alt="Displayed image">
+        <span class="nav next" aria-label="Next image">&#10095;</span>
+        <div class="lightbox-caption">
+          <h2></h2>
+          <time></time>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <footer class="footer">
+    <p>Designed by Edward Wang | &copy; 2025</p>
+  </footer>
+
+    <script>
+      /* ─── Masonry Gallery + Lightbox (Vanilla JS) ─────────────────── */
+      class MasonryGallery {
+        constructor(container) {
+          this.container = container;
+          this.images    = [...container.querySelectorAll('img')];
+          this.createLightbox();
+          this.observeImages();
+        }
+
+        /* Adjust each item so it spans the proper number of grid rows */
+        resizeImage(img) {
+          const rowHeight = parseInt(getComputedStyle(this.container).getPropertyValue('grid-auto-rows'));
+          const gap       = parseInt(getComputedStyle(this.container).getPropertyValue('gap')); // same as --gap
+          const span      = Math.ceil((img.getBoundingClientRect().height + gap) / (rowHeight + gap));
+          img.style.gridRowEnd = `span ${span}`;
+        }
+
+        observeImages() {
+          this.images.forEach(img => {
+            if (img.complete) {
+              this.resizeImage(img);
+            } else {
+              img.addEventListener('load', () => this.resizeImage(img));
+            }
+            img.addEventListener('click', () => this.openLightbox(img));
+          });
+        }
+
+        /* ── Lightbox ───────────────────────────────────────────── */
+        createLightbox() {
+          const fragment  = document.getElementById('lightbox-template').content.cloneNode(true);
+          this.lightbox   = fragment.querySelector('.lightbox');
+          this.lbImg      = this.lightbox.querySelector('.lightbox-image');
+          this.lbTitle    = this.lightbox.querySelector('h2');
+          this.lbDate     = this.lightbox.querySelector('time');
+          this.lbDesc     = this.lightbox.querySelector('p');
+          this.index      = 0;
+
+          // Close controls
+          this.lightbox.querySelector('.close').addEventListener('click', () => this.close());
+          this.lightbox.addEventListener('click', e => {
+            if (e.target === this.lightbox) this.close();
+          });
+
+          // Navigation controls
+          this.lightbox.querySelector('.prev').addEventListener('click', () => this.navigate(-1));
+          this.lightbox.querySelector('.next').addEventListener('click', () => this.navigate(1));
+          document.addEventListener('keydown', this.handleKeyNav.bind(this));
+
+          // ─── Touch‑swipe support ──────────────────────────
+          let startX = 0;
+
+          this.lightbox.addEventListener('touchstart',   e => startX = e.touches[0].clientX);
+          this.lightbox.addEventListener('touchend',     e => {
+            const deltaX = e.changedTouches[0].clientX - startX;
+            if (Math.abs(deltaX) > 50) {                 // 50 px threshold
+              this.navigate(deltaX < 0 ? 1 : -1);        // swipe‑left → next
+            }
+          });
+
+          document.body.appendChild(this.lightbox);
+        }
+
+        openLightbox(img) {
+          this.index = this.images.indexOf(img);
+          this.showImage();
+          this.lightbox.classList.add('open');
+        }
+
+        showImage() {
+          const img = this.images[this.index];
+          this.lbImg.src         = img.src;
+          this.lbImg.alt         = img.alt;
+          this.lbTitle.textContent = img.dataset.title || '';
+          this.lbDate.textContent  = img.dataset.date  || '';
+          this.lbDesc.innerHTML = img.dataset.desc
+            .replace(/__([^_]+)__/g, '<u>$1</u>')
+            .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
+            .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+        }
+
+        navigate(direction) {
+          this.index = (this.index + direction + this.images.length) % this.images.length;
+          this.showImage();
+        }
+
+        handleKeyNav(e) {
+          // Only act while this gallery’s lightbox is open
+          if (!this.lightbox.classList.contains('open')) return;
+
+          if (e.key === 'ArrowRight')      this.navigate(1);   // → next
+          else if (e.key === 'ArrowLeft')  this.navigate(-1);  // ← previous
+          else if (e.key === 'Escape')     this.close();       // Esc to close
+        }
+
+        close() {
+          this.lightbox.classList.remove('open');
+        }
+      }
+
+      /* ─── Initialise all galleries on the page ─────────────────────── */
+      document.querySelectorAll('.gallery').forEach(gallery => new MasonryGallery(gallery));
+    </script>
+  </body>
+</html>
